@@ -1,0 +1,749 @@
+﻿Row_ID,ISSUE NO.,File Name,Original Description,Preferred Term,Alternative Terms,Definition
+1,22004,22004_Report of CCI_Hero附件包螺丝螺牙搓牙未到位 Issue V1,1. 2022/1/18 Hero客戶終端反饋RXAB-HC67附件包33.RXABH.004X螺丝中，其中1pc無螺牙。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+2,A220101,A220101_DNUR-SY3_不读卡,"1.2021/12/29 FQC 檢驗 DNUR-SY3(81DNUR13.GU3)發現不讀卡*1pcs (F/R=1/80=1.25%),初步分析U2 (DC-DC)单体对地阻抗异常导致.
+2.產出产品Sorting後 (Total 204pcs, 重流全流程),12/31 二次抽樣再次發現不讀卡*6pcs (6/32=18.75%)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+3,A220102,A220102_L302 Function站不良率偏高,"ATP Function測試站發生連結至客戶端server時間過長, 造成Test Fail, Error code: DVG00009, 工單不良率: 4%~12%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+4,A220103,A220103 Qualpie-48LP SFP撞傷_20220125,"1/24 製造夜班於OnLineFCC、BurnIn站外觀檢時相繼發現SFP50 Marking處有固定點撞傷
+回查異常品100%集中Post測站治具編號為: DDZ-QSA42TFCT*-CF02A
+同時確認其他三台Post治具測試之DUT無外觀不良現象(CF01A、 CF03A、 CF04A)
+初步確認為Post治具螺絲凸出擋塊造成測試時撞傷DUT (1/25, done)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+5,A220104,A220104_SAQG-H1 未依TPI 使用替代料_20220114,"1/11 FQC 檢查SMT TN2DBG010004 (替代料batch run)首件，發現未依 TPI 使用替代料。  TPI : TN2_0000003915  ,替代料83.35237.003
+",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+6,A220201,A220201_8D Report SMA_UCT-MV1M_IR Filter脫落,"2/9維修分析Outward Optic test Blemish NG 1pc，拆開Sensor Board發現Lens上Filter glass脫落，膠(ZMAX點膠)與玻璃結合良好，但Lens筒身完全不殘膠
+SN: N3BJM04H03KZC01，MO: TN1APG010124
+Lens P/N: 36.0B112.001KT，D/C: 2144，Lot No.: 2144001",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+7,A220203,A220203_8D Report NW2_RAGQ-AB84-J漏鎖螺絲&漏貼PAD,"2/12北京Alabama 反馈RAGQ-AB84-J FAI样机不良1pcs.(SN:CNN6L1L04R),不良现象:PSU模块螺丝漏锁3颗(正常4颗),Thermal pad漏贴2pcs(7*7*2mm& 5*5*3mm）,F/R 2.38%(1/42)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+8,A220204,A220204_RHLY-AG2_Motor Issue at the Final Station 8D report,"On 2/16: High NG rate at final test station with the error code: NP0208 - checking rotating motor NG.
+PN: 91RHLY19.G01
+Defect classify:
+- 24pcs motor gear incoming material NG. Material P/N: 23.62213.001, Vendor: MITSUMI
+- 243pcs wrong material at L7,L8 position. (OK part: 68.101Y0.1D1; NG part: 68.12202.010 )
+NG rate: 267/2280 ( 11.7%)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+9,A220205,A220205_QSA94-X8B-AS-12P 不開機,機台在Pre-program測試時不開機,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+10,A220206,A220206_UCT-MV1M_Lens IR Filter脫落,"維修分析Outward Optic test Blemish NG 1pc，拆開Sensor Board發現Lens上Filter glass脫落，膠(ZMAX點膠)與玻璃結合良好，但Lens筒身完全不殘膠
+SN: N3BJM04H03KZC01，MO: TN1APG010124
+Lens P/N: 36.0B112.001KT，D/C: 2144，Lot No.: 2144001",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+11,A220301,A220301-8D Belkin SAQA-L2 Mixing the material,"IPQC online detected that OP assembled mixing thermal pad components at model SAQA-L2.
+OK : 47.RAAA6.002 (12x12x2)
+NG: 47.SAQ5.009 (9x9x1)
+Rate: 100% (85pcs/85pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+12,A220302,A220302_8D Report SMA_UID-IR2M_Hot bar soldering造成D401損件,3/4 New Power Group2 ST13 Hot Bar Soldering作業完成，產線人員目檢發現D401損件，總投入412pcs，其中21pcs有損件,損件,damage;damaged;損壞件;破損,零部件在生產或運輸中受損。
+13,A220303,A220303 （8D报告）SAQ5-G2的21.30133.001EA来料尺寸不良异常,"3/16号SMT FQC抽检55SAQ512.0G1EA时，发现4/12pcs (不良率33.3%) DC Jack (J18)有接触头和pin的尺寸NG (X尺寸的标准：4.7±0.3mm，实际：4.25mm，差异0.15mm，如下图片). Material P/N: 21.30133.001EA,，DC 2153， Vendor name: TAKE WING, China)。",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+14,A220304,A220304-8D Belkin SAQA-L2 PCBA BOT面R291电阻错料Report-20220323,"2022.03.17 SAQA-L2 ATP-W102 Line test Function 站test 20pcs/20 pcs FAIL,不良项:不接受USB,原因为PCBA在R291贴错电阻料
+OK PN : 64.76815.6D1 (R值：7.68 KΩ)
+NG PN: 64.40225.6D1 (R值：40.2KΩ)
+Rate: 100% (20pcs/20pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+15,A220305,A220305-8D Belkin SAQ4-L2 TOP 面上J4位置用错料报告-20220326,"2022.03.23 Beam SAQ4-L2 PCBA TOP面在J4位（DC直流电源插孔）置上DIP用错料
+OK PN : 21.30023.003 NG PN: 21.30043.004 (SAQB-L2) Rate: 23% (230pcs/1000pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+16,A220306,A220306  UWM-89359  F5903 錯件8D,"3/23  ATP 維修發現 UWM-89359 RF1 不良品 : Error code: AE0735 (TX Power Align 2.4G_6_HT20_MCS7_2)
+經FA 分析後,確認為F5903錯件,經查明正確料號應為 : 69.61658.003AG(F5903) ,錯誤料號為: 69.61658.002AG(F5901)",不良品,瑕疵品,經檢驗或測試判定不符合規格或標準的產品。
+17,A220307,A220307(8D)_2022.03.14 JKP12 D15損件,3/14 SMT FQC進行NQJ打件之入料檢，發現1pc D15損件,損件,damage;damaged;損壞件;破損,零部件在生產或運輸中受損。
+18,A22030,A22030_JVG2- LTE板 SMT試run SL207 真空回焊爐，造成客戶EPR認證批低良率,4/E SMT試run SL207 真空回焊爐(GO9 LTE板)，batch run工單未通知MPM/ATP/PQA/客戶，未綁ATP工單，於ATP使用到客戶驗證新設計主板(OBD板)的EPR認證批，造成83%低良率。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+19,A22032,A22032_8D Report_Bezel組裝Top cover後有浮起現象,Bezel組裝黏貼至Top cover上有鬆動情況，經確認發現Bezel有浮起現象,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+20,A220401,A220401-8D Vita 81WHV1C1.G03 LCM Report,"On Apr. 18th, during inspection at FQC station, FQC detected 1pcs with first boot up show function touch screen issue (pic.1). After turning power off and power on the product this abnormal disappeared. SN 1582216009497 NG rate: 1% (1/100pcs).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+21,A220403,A220403 8D Vita WHV1C Z-Wave malfunction Report,"On April 24th, during inspection, ATP FQC detected 3pcs/160pcs showing that operation failed when performed Z-Wave paring.
+VIVINT P/N :VS-SH2000; WNC Model : WHV1C (Wallsly); WNC PN: 81WHV1C.G03. Defect Rate : 1.9% (3pcs/160pcs)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+22,A220404,A220404_NA_UCT-MV1M Shielding frame 尺寸異常導致搖晃異音,"4/25 產線(A336)外觀站人員反應產品搖晃時產生異音
+截至4/26日班累積不良率:14.5%(182pcs/1,252pcs)
+Model: UCT-MV1M
+P/N: 81UCTM1MU2N.G01KT
+M/O: TN1APG040066
+確認驗證批與量產批皆使用DC2215，IQC抽檢結果pass(檢驗項目未包含凸包尺寸)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+23,A22044,A22044_JVG1-外殼組裝壓合有段差大於0.15mm,"使用壓合治具100% 蓋合後有段差、經人工用力壓合後，80%可組入(斷差合規)、剩20%人工無法組入。
+8/10~8/12 治具持續調整壓合力道，無法克服上述問題。(氣壓已經調到最大值)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+24,A220501,A220501（8D报告）LVR2的76.1S220.005来料不良异常 ,"05.15号SMT生产55LVR2IS.0G1VIC 过程中在炉后AOI发现GT1&XT1零件位置偏移不良异常 (43/176pcs =24.4%)
+经过SMT PE和相关部门确认结果为GT1&XT1来料胶层气泡不良导致。
+料号：76.1S220.005，DC不良：2152，供应商：UDEC - China",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+25,A220502,A220502 Qualpie-48LP Box label shift_20220509-2,"5/9 日班製造/IPQC/FQC發現Carton: CW006M050700NN內3台DUT Box Label貼附Shift；FQC加抽同棧板另一箱: CW006M050700ON仍有相同狀況
+查詢SFCS紀錄確認皆為 5/7 夜班 “ 21000904 - 黃聖益 ” 人員作業
+確認該人員主要作業站點為Qualpie On Line Box站點，當日初步先將 Qualpie 全機種Hold Shipment",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+26,A220504,A220504_ Alert  Pola (Thailand)客戶反饋XYBB-PA2 BT function test fail (cable 芯線 cutting),"2022/5/25, Pola(Thailand)反饋XYBB-PA2 BT function test fail (cable 芯線 cutting),
+不良率0.1%(FR=1/1000),SN: EOXEL5101BF5J01, DC: 211213.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+27,A220505,A220505 JVS3 14 pin connector供貨不良造成ATP Leakage test fail,JVS3 EPR batch投產256pcs，於ATP Leakage test(氣測)時約有10% (27/256) test fail。,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+28,A220602,A220602_RAAB-E2 L22損件Issue_20220624,"2022/6/23產線夜班組裝站發現PCBA*6pcs有零件損件，損件位置皆為L22.
+造成損件的站點為背板Shielding Cover壓合站，天板下壓時壓到L22造成零件外殼破損。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+29,A220603,A220603_UCTMV1M 使用到客戶未承認替代料,"7/1 產品UCT MV1M Mainboard使用到客戶未承認之替代料，使用於55UCTM1MU2N.0GCKT
+Model: UCT-MV1M
+P/N: 55UCTM1MU2N.0GCKT
+M/O: TN1APG060001
+不良率:100%(3,000pcs/3,000pcs)
+料號:84.20400.001KT、73.B7410.029KT、84.23160.001KT、73.74107.0HBKT、74.45760.001KT",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+30,A22063,A22063_FBJ4-R2 ORT1 Chamber X-pol test fail  20221125,"2022/11/14 FBJ4-R2 ORT1 Chamber X-pol test fail, DR:2/6=33.33%. Spec≥25dB
+24.70@18V/12.3GHz，24.31@18V/12.35GHz，24.48@18V/12.4GHz，24.86@18V/12.45GHz; 24.77@13V/12.35GHz，24.76@13V/12.4GHz，24.85@13V/12.45GHz ABA驗證異常隨Housing，D/C 2240，模號BK3-1，廠商：上達",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+31,A22064,"A22064 QA 8D Report Vita WHV1C Quality Alert Line Resumed production without record fixture, etc checking.","On Nov-23rd 9:30AM, during normal inspection at production line. Customer Vita onsite detected that line 109-PK didn’t follow production line inspecting regulation, and didn’t record into related check sheet(Fixture) before resumed production in Nov-22nd afternoon
+But already verified all cable loss, golden sample tested and fixture check by PE(reference page5).
+Model : Wallsly
+Quantity : 56pcs",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+32,A22068,A22068 QA 8D Report Vita WHVP2 Dent Adapter Issue,"On December-22nd, PQA detected that all of the adapter from Honor vendor has the dent on it. Qty: 470/470 PCS
+P/N: 25.12412.051",壓痕,dent;壓痕,受壓產生的凹陷痕跡。
+33,A220703,A220703_8D Report NW2_RVAQ-52I PCB電感錯件,"7/7 WD201线Alabama RVAQ-52I Function test站不開機,F/R : 3%(3/100).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+34,A220705,A220705 Zebra-8 電阻與螺絲short造成DUT shut down-3,"7/1 夜班生產發現Function & Final 站有Ping DUT異常，複測率 8.5%(25/293)
+確認NG品的PCB單體測試OK，排除PCBA打件不良的問題
+將NG品的PCB再重新組上下蓋異常復發
+將NG品加大扭力下鎖此顆螺絲，function與final站可pass
+ME確認異常品螺柱高度、機殼厚度、平面度、螺絲高度、塑膠件厚度皆合規，排除來料不良
+經解析確認為螺絲與電容(C812)/電桿(L9)元件干涉造成PCBA 3.3V電壓對地短路問題，使得DUT無法開機
+至7/5為止，已嘗試將鎖附扭力調至上限(3.5 kgf-cm)，仍有類似問題持續發現 (螺絲扭力spec: 3+/-0.5kgf-cm)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+35,A22072,A22072 JKS3 mosfet not turn on fully issue,"12/28 , 接TM 通知，NQJ生产JKS3-SP机种时，在Final站发现 145/400pcs（不良率: 36.25%）无法升级FW.
+2pcs 不良品IR回TW后，RD分析结果是Q22(84.07002.030) 替代料规格与原设计规格不符，故停止使用Q22 替代料，
+料号：84.07002.030, 84.22700.L02, 84.22700.014 .",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+36,A220801,A220801_8D事故分析報告SA515,"一、 日期:2022/08/03 22:30，線別:NV05，料號:91UMC55GCZ.G03AG，因Calibration Test NG 生產人員檢查產品時發現板背缺角，並通知全才確認損件產品，另外發現在缺角處附近錫球有受損的狀況。 
+二、 將已生產完成的產品全數Sorting，全數75片其中29片相同位置的錫球皆發現損傷，並確認機台當下測試完成的產品全數12片錫球皆損傷，以上總生產87片，41片NG，不良率47%
+",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+37,A220802,A220802_55UMS48P.MGFAG 燒錄 IC 空燒異常,"8/8 SM21 91.UMS48PC.GLBFAGAG，TN1ANG070679 ，良率88.14%，NG總數量73/603
+PCBA test Error Code :AH039 (Power_Up_Voltages-SW_REV Fail)*73
+維修進行AB Swap分析，初步判定為IC空燒
+IC料號: 53.UMS06.084AG/72.25323.B0TAG",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+38,A220803,A220803_8D report_NW2_R6AQ-C2_PCBA包裝ESD超標_Final,"S1委託KS SMT生產的R6AQ-C2機種PCBA (81R6AQ03.G53)首批入料2.2K pcs 於2022/8/15入料到S1 ,產線人員於8/15拆箱發現為透明泡泡袋包裝PCBA，量測ESD 靜電壓值超標, 超標值：-883v (ESD標準值：±100v。); 經檢視包裝方式, 發現未使用靜電防護規範包材材質進行PCBA包裝.
+WNC ISO 文件規範ESD
+ESD超標值：-883v，ESD標準值：±100v。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+39,A220806,A220806_ 55.UMS8FCM.MGFAG_U301_IC 燒錄錯誤,"8/17，IC料號: 72.22532.004AG/ 53.UMS06.146AG
+IC燒錄錯誤 (OK: QE=1；NG:QE=0 )，位置: U301；鐵框外，
+僅可重焊維修，NG品入維修流程 。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+40,A220901,A220901 Alabama RVAQ-52I Thermal pad 贴错位置,"On 09/06, at W204-PK line IPQC audited model RVAQ-52I and found 10/11pcs thermal pad was pasted wrong position caused by operator operating process.
+Correct position: U72.
+Incorrect position: R47.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+41,A220904,A220904 VN区域Breit的21.G0640.000DT EXTERNAL CONNECTOR来料不吃锡不良,"2022/09/16夜班FQC抽检55RIMR04.MGEDT发现1/12pcs在J7600零件位置 External Connector来料异常不吃锡不良(不良率：8.3%）,目前PD已经sorting 发现275/8500pcs NG ( 不良率：3.2%). 具体物料不良如下
+①，料号：21.G0640.000DT;
+②，DC不良：2217,2221,2222; ③，供应商：DIAMOND",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+42,A220905,A220905_8D Report_SMA_UID-IR2M_上蓋凸起,"2022/9/20 客戶Tina上海產線上發現上蓋凸起(相比正常品高0.3mm，客戶無高度規格)且影響裝配，客戶目前產線上有約50% camera module
+SN: P1588124-90-I:SBLI22216003674 , MO: TN1ANG070631
+上蓋料號: 3D.0004H.11192AG, Date Code: 2231, Lot No: 2231",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+43,A220906,A220906_8D report_ UMM-IBTD2二维码反向-2022.9.15,laser 2D barcode direction reverse,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+44,A221001,A221001 Quagga_Qualpie 48P PCB板材不良-錫滲漏_20221005-2,"2022/10/4 DIP(VI)通知FQC PCB外觀不良，確認PCB表層綠漆因溢錫有凸起不平整，且X-Ray下可見錫滲漏
+異常集中PCB D/C: 2232；PCB PN: 48RSPM12.0GBTRI；Vender: TRIPOD(健鼎科技股份有限公司)
+NG Location: J3,J4,J5,J6,J7,J8 PIN腳處，尤以J7, J8最多不良 ",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+45,A221002,A221002 PieZ Pre-Program開機異常確認為U32錯料導致_8D_V02,10/19 ATP反應Pre-Program開機異常，造成 reboot NG,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+46,A221005,A221005(8D)_2022.10.31 SD6 流水碼配號選取錯誤,"SD6 流水碼配號選取錯誤
+正確XTD6A2243A0001
+錯誤XTD6A224300001
+工單(TN2CNG100035)數量：1800pcs全數錯誤",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+47,A221101,A221101_8D Report_JVS3 Final Test fail_20230222_v6,"11/3於Final Test中的gauge current out of spec. (Value: 426.25, 448.27, 458.91, Spec. 200~400 mA) (SN: GB74-NF5-UCX, G57H-EEV-MJC...etc).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+48,A221103,A221103_FBJ4-R2 ORT1 Chamber X-pol test fail  20221230,"2022/11/14 FBJ4-R2 ORT1 Chamber X-pol test fail, DR:2/6=33.33%. Spec≥25dB
+24.70@18V/12.3GHz，24.31@18V/12.35GHz，24.48@18V/12.4GHz，24.86@18V/12.45GHz; 24.77@13V/12.35GHz，24.76@13V/12.4GHz，24.85@13V/12.45GHz ABA驗證異常隨Housing，D/C 2240，模號BK3-1，廠商：上達",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+49,A23001,A23001 Qualpie-24P ATP Post FCT NG確認為NAND Flash FW燒錄錯誤,"1/11 ATP夜班PostFCT test重測率NG High 9.4%(47/500)， 集中Error Code: DRP00321 
+PE解析確認U5 NAND Flash FW資訊錯誤，造成PostFCT開機資訊異常
+異常集中SMT MO: TN2DNH010095。同步反饋燒錄室調查確認為1/7重新燒錄作業疏失，造成FW資訊錯誤:
+將545ea已重新燒錄但未更正打點顏色(綠紫)，導致早班以外觀判定同料同分位(綠點)，將545+960ea移料給 TN2DNH010095,導致錯料有545ea",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+50,A23002,A23002_8D Report-RAZB-HC87-J U13極反,"1/13N ATP產線生產 RAZB-HC87-J 在 PCBA test站發現不開機不良，不良率100%（10/10），分析為CPU( U13)極反造成
+SMT 生產資訊: 2023/1/12 SMT1209線首次生產, MO:KN1DNG120073, 數量:1000pcs",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+51,A23003,A23003_RJ80机壳Cd超标8D,"2022年1月14日接客户启佳反馈我司出货料号34.CR5CI.004X & 34.WR5CI.006X RoHs检测超标，经第三方检测显示Cd限值100ppm,实测115ppm。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+52,A23004,A23004_8D report for RBET-HC62_91RBET05.G01X 生产测试异常,"2023/1/30,RBET-HC62_91RBET05.G01X PE在Run線時，在Funtion 測試發現 BLE & PCIE VER異常，PCIE GPIO無法測試,F/R:6/6=100%",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+53,A23005,A23005_8D Report_SEQJ-D2_ATP Function Test不良率過高_20230809,2/2 ATP PE於Function Test時(MO: TN2DNH010093)不良率過高(50%；8/16)，不良現象為USB Check NG，已使用Golden sample確認環境是沒問題的，經拆開Shielding cover後發現PCB百百皆有SMT維修打紅點的痕跡，使用顯微鏡觀察發現USB件 (位置：J1) 皆為空焊 (SN: J07GN0300003N01...etc).,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+54,A23006,A23006_8D report_Mikrotik RXEQ-MT2 POE test item failed,"On 2/09, when producing model RXEQ-MT2, PN:81RXEQ03.G22, at Function test station detected POE test item failed with high rate (NG rate): 15,79% (72/456pcs); SPEC: >40V; NG unit: <1V",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+55,A23007,A23007 QA 8D Report Carter UOC-5541 Missed NUT and WASHER components,"Night shift 2/13, IPQC performed FAI inspection with 1 carton (45pcs), detected 38/45pcs (84.4%) missed 2 kinds of assembly material: NUT (P/N: 87.HT000.002) and WASHER (P/N: 88.19000.003) components.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+56,A23008,A23008  2630M D57極性反,"2/15 ATE Test無法測試,確認為D57 極性反",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+57,A23009,A23009 8D report_GO9 E3 Inconsistent BOM on GPS Module GND (C20),"From the BOM 002401-13-PCA Rev. A7 which Geotab provided, the location C20 shows MURATA capacitor GRM033Z71C104KE14D with the note mentioned to populate Yageo resistor RC0201FR-07100KL. WNC did not notice the note about fitting resistor, instead, populating the MURATA capacitor.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+58,A23010,A23010 QA 8D Report   Andy LS03 Shielding cover组装后有异音,"03/11，VN LS03 PPR期间，PD反馈组装Shielding cover后晃动产品发现有异音。经过ME分析发现Shielding Frame 凸包尺寸异常（球径超标 Spec 0.55+/-0.05mm 实际 0.37mm）。
+料号：3S.00146.111HPE，3S.0013V.111HPE，3S.00142.111HPE（S2移转的材料）
+不良率：100%（184/184），厂商：宏湃",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+59,A23011,A23011 Quagga-48 未依TPI使用替料上線,"3/12 DIP 進行Press fit生產時，未依TPI_TN2_0000006222 使用替代料 21.L0000.004生產 
+錯誤:21.L0002.001(主料) ； 正確:21.L0000.004(替料) ；Risk : 前41pcs使用主料生產，其餘已重新更換為備料生產",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+60,A23012,A23012_ QA 8D Report  Andy  LS03 Keypad卡键,"03/15，VN LS03 量产期间，FQC检验发现 Key pad 8 号按键卡键。ME分析发现Keypad尺寸超标。不良率：6/24pcs=25%。
+料号：3P.0012E.111，厂商：毅嘉，D/C：2250。",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+61,A23013,A23013_8D Report for FD4 Low Gain Issue,"FD4-R1/57.FD4R1.T01 ADJ Gain: Low gain
+Fail rate: 117/347=33.72%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+62,A23015,A23015_QA 8D Report SABB-CC1-Eth LED Green NG,"03/27, NW1 Compass, model SABB-CC1 (PN: 81SABB01.G01) 在Function test station 测试时发现15pcs LED 亮度不良。
+Spec: 50-240 / Actual: 0
+不良率: 30% (15/50 pcs) Material PN: 21.Q1805.004, 厂商: GLGNET, D/C: OK: 2243/ NG: 2221",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+63,A23016,A23016_8D Report VMC-9150L 燒錄 FW 與 BOM 不符,ATP-PE 於 3/23 進行 TN1ARH030219 重工 FW 時，發現產品實際燒錄 FW (V00.04.11.02) 與 PLM 上 BOM 定義53 階對應 FW (V00.04.10.02) 不符。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+64,A23017,A23017 Qualpie-48LP PCB絕緣層剝離,"4/7 DIP(VI)發現PCB: 48RSPM11.0GATRI (供應商: Tripod)固定位置氣泡不良，照片可見防焊層與銅層分離、部分有溢錫/氣泡破損不良
+集中SMT MO: TN2DNH030053產出(MO Q’ty: 1919)，共sorting出121pcs不良(NG Rate: 6.3%)
+不良品100%集中Location: CON6背面，且異常PCB較集中DC: 2142產出",供應商異常,supplier issue;供應商;廠商,供應商來料品質、交期或標示不符合要求所致。
+65,A23018,A23018_QSA73-OAM-MR-48LP_55QSA731.0G1_(S2)盛裝PCBA未使用靜電泡棉,"SMT IPQC發現烘烤後的PCBA放在靜電箱內未使用靜電泡棉盛裝。
+不良率：100% (33/33)。
+PD描述：因PCB可能殘留濕氣，造成拆除零件(U37)時會有爆板現象 (前批爆板4pcs)。 PE工程評估後告知PD需烘烤PCB。烤箱於off-line雷雕區離PCB維修區相距甚遠。PCB經120∘C/7HR烘烤降溫後，因仍有餘溫，OP怕溫度會影響泡棉因此暫時乘載於黑色靜電箱，並集中放置於線修區旁待PCB完全冷卻後，人員忘記將泡棉重新放入而繼續堆放於線修區旁。",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+66,A23019,A23019_8D report for RAAB-E1 ESB Bag issue _v5_20230414,"S1/S2 週轉用包材, 三月回貨時發現氣泡袋庫存不足(4B-RSAC113-001 EOL), 導致S1產線缺板停線, 為不影響後續量產品出貨,導入未驗證過的氣泡袋包材(料號: PD.G0024.15F01)以TPI 臨指的方式進行變更上線. 
+未經驗證過用料用於生產,違反: ISO 文件2-JQ-0004產品工程變更作業程序書,程序C5，C6、E3、E4階段產品，對產品與製造過程有變更者，均須遵循工程變更程序辦理.
+註 : 原氣泡袋4B-RSAC113-001,W330XL360+100MM,;
+    新氣泡袋PD.G0024.15F01 360MM*310MM+60MM",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+67,A23020,A23020 Quagga-48FP SMT U37錯料,"4/13 SMT FQC FAI首件發現U37(73.A2005.003) Marking與EIQC不符: 末行少一碼 ""I""
+EIQC 定義: Line1: M2S005/Line2: TQG144/末行: I和S
+正確PN: 73.A2005.003 (marking末行有I和S)
+錯誤PN: 73.A2005.006DR (marking末行只有S)
+委請產線回查確認AOI首件有發異常，但又因PE bypass造成27pcs已打件",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+68,A230201,A230201_8D Report_SEQJ-D2_ATP Function Test不良率過高_20230331,2/2 ATP PE於Function Test時(MO: TN2DNH010093)不良率過高(50%；8/16)，不良現象為USB Check NG，已使用Golden sample確認環境是沒問題的，經拆開Shielding cover後發現PCB百百皆有SMT維修打紅點的痕跡，使用顯微鏡觀察發現USB件 (位置：J1) 皆為空焊 (SN: J07GN0300003N01...etc).,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+69,A230202,A230202 2630M D57 極性反 8D report,"2/15 ATE Test無法測試,確認為D57 極性反*912pcs
+SMT MO: TN1APH020085 PN: 55.UOC263N.0GA",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+70,A230203,A230203-裕同开胶不良改善报告20230224,"2/20 製造中心Ⅱ（NW3）ATP 反饋 RBLD-AG3 裕同Box開膠, 不良率:100% （100/100）,DC:2022/6",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+71,A23021,A23021_8D Report UMS-X28Af FL100短路,"Date:2023/04/09 ATP Line: A328
+PN: 91.U8AFBMR.GZ1FAAG Station:A328/A357 SYSTEM站
+異常:良率95.81%(34/811)，造成鎖站3次
+NG測項:574_HB_TER_CNR_HB_TERA__CNR
+NG主因:FL100短路",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+72,A23022,A23022_8D report_LAWI 风扇装反,"On 4/20, IPQC 巡线时发现 LAWI*1pcs 风扇装反 在FCC 站， PD同步sorting 发现4pcs NG",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+73,A23023,A23023_8D Report_SAQG-H1 Thermal Pad錯混料issue,"4/19 IPQC於S3 site進行RF Test站點巡檢時，發現早班貼附Thermal Pad 位置錯誤 ; Risk : 378 pcs 
+拆機確認夜班組裝WIP位置組裝正確，因此Risk定義為早班所有組裝WIP共378pcs",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+74,A23024,A23024 8D Report_HERTZ RVAB-615 产品用错CPU Assembly number 230420,"On 4/20, 在 W201-PK line 81RVAB03.G9W机种 生产Normal 工单过程中 PE 巡线检查发现发现产品
+使用错 CPU Assembly Number。
+正确：2010372B
+错误：2010372C
+不良率：100% （183/183）",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+75,A23025,A23025 8D Report of NW1-WHVP2-Blush defect issue,"During normal inspection, on-site customer detected 6/6pcs that has blush defect on B side of housing.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+76,A23026,A23026_8D Report_XRAV-1_ATP RF站無法測試_20230519,4/25 ATP產線反應RF測站無法測試，經分析後確認為C58及C13位置的電容錯件,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+77,A23027,A23027-QSB11-OAQ-ER_81QSB111.G02_下蓋原材不良(Lack painting),"2023/5/5產線反饋於組裝第一站投入前自檢發現下蓋少漆，
+位置發生於下蓋上邊與兩側。不良率60% (300/500)。
+下蓋導致組裝後機殼邊緣看到有白邊(原金屬色)露出",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+78,A23028,A23028_[8D]2023.05.05 AU6 IF Board-R28錯件,"產線於ADJ LOI測試時，發現整機不過電，回查發現IF-R28錯件
+正確：43K ohm，錯打成1K ohm
+共投入550pcs，已組裝約180pcs，90pcs不良，不良率50%",錯件,mix part;混件;混料;錯件,物料/零件型號或版本與規格不符（含混件/混料）。
+79,A23029,A23029_ 8D report_ CH2 Victor LVR2 天線 I-PEX plug signal contact 變形,"5/15, ATP3 LVR2 生產時在 OTA 站ATS detected WiFi_2G_CH_0_RSSI NG ( SPEC:-47~-30dB, Value:-57dB) 不良率：5.04%（66/1308），
+經PE、ME、QA拆機確認天線 I-PEX plug signal contact 變形。
+料號：95XKAC15.GEAVZ; DC: 2319; 組裝廠商：晟維",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+80,A23030,A23030-QSB11-OAQ-ER_81QSB111.G02_Adaptor線材束線方式變更,PD found the PSU cable bundle changes when preparing the materials.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+81,A23032,A23032 QA 8D Report Carter UOC-2632M D57 component was wrong polarity with 180 degrees,"On 5/30, PE verified ATE testing program of UOC-2632M new SKUs and found 1/1pcs SIM function failed due to D57 components were wrong polarity with 180 degrees.
+Sorted and found whole MO SMT NN1ANH050018 (1608/1608pcs ~ 100%) are the same issue.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+82,A230325002,A230325002 8D report_RVAB-615  DIP DC Test Fail,"3/23 NQX DIP發現RVAB-615（55RVAB22.DG4）DC test Fail,不良率:200/200=100%, MO:LN1DBH030035, 另影響在製MO: LN1DNH020243 *3,850pcs",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+83,A23034,A23034_8D report of J7AU錯件,"產線接料錯誤。
+正確：正確1Kohm 錯誤0 ohm",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+84,A23036,A23036 LS04的20.21005.004 Connector来料拒焊不良,"6/07, VN SMT区域的SMT7212生产55.LS041.MGA过程中在炉后AOI发现在J1030 位置Connector拒焊不良1274/4546pcs=28% NG (MO:NN1CNH050136 )，SMT团队已经分析制程无异常，怀疑来料异常,
+1. Vendor : AMPHENOL
+2. PN: 20.21005.004
+3. DC: 2218，2224",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+85,A23038,A23038_8D report for QSA95-X8B-AS-16P Raisin 16 U43U49 燒錄issue,PE反應ATP 良率過低(ATP MO:TN2DBH050012 )，U49 checksum 同時存在黃色及白色打點，U43未燒錄和有燒綠(白點)。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+86,A23040,A23040_8D report for R6AQ-MR4 NQX 反饋發現S3物料2S標籤與實物不符 (20230801 update),"7/14, NQX 反饋S3物料(71.59074.003DR) 4捲料盤2S Label與實物不符。
+標籤：71.59074.003DR, Qty：1000
+實物：71.55154.007DR, Qty：4000",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+87,A23041,A23041 QA 8D Report MT RAAA-MT13 Function test station detected failed to connect with high NG rate,"On 7/24 night shift, when producing model RAAA-MT13, PN: 91RAAA0D.GD8, at Function test station detected failed to connect with high rate NG rate: 1.63% (15/923pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+88,A23042,A23042 NW1 Vita WHV1C的R21 64.30005.6D1电阻值异常(BOM 错料）,"7/24, VN SMT生产WHV1C/55WHV1C1.0G8过程中在ATE test站发现R21位置电阻值异常100% (3500/3500, MO: NN1DNH070026 ). +正确64.34825.L01主料值: 34.8K Ω,
++错误64.30005.6D1替代料值: 300 Ω",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+89,A23044,A23044_8D report_ LV65C流程缺少Burn in 抽测 20230819,"8/11, PE 反馈SFCS生产报表中发现LV65C (PN：57.LV65C. 005) process routing IE未设定Burn in/De-burn in抽验站别",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+90,A23045,A23045_8D report for AU6 Cable 來料異常,"AU6 cable來料異常
+PN: 95XKAE15.G03
+尺寸：2.5±0.2mm，不良品量測後約為3.6~4.0mm",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+91,A23047,A23047_8D report for RVAQ-AP43 LED1極性反，程式設定錯誤,8/17 SL407第一次生產55RVAQ43.0G2 (AP-43 TI版本)，經FQC確認首件後發現LED1(PN: 83.80682.004) 極性錯誤(差90度),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+92,A23048,A23048_8D report_JVS1 ATP IO Test NG_20230911,"8/21 ATP IO test站有批量性不良，經分析為R404電阻阻值異常 (正確: 1.6K ohm, 異常: 0.4K ohm)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+93,A23049,A23049_8D report for SCST1-SX2 U8 DDR regulator 中央ground pad焊錫異常,U8 DDR regulator (D/C: 2321)經X-ray抽驗，發現中央ground pad有吃錫不佳情況。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+94,A230505,A230505 VMC-9150M U1缺件 8D report,"5/22 VI發現 SL11 VMC-9150M U1缺件
+SMT MO: TN1ANH050706 PN: 55.V9150MG.MGAAG",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+95,A23051,A23051 QA 8D Report Patrick JKP15 Ultra low current issue,"PE responded that JKP15/81.JKP15.G05, PCBA test station failed (105/1099pcs ~ 9.5%) error code AFU00224: Ultra Low Current over spec (0.002~0.0081mA), actual: 0.02 mA.
+After FA and found U6 component with DC23XX is high risk. (DC22XX used 3.5K, no found similar issue).
+P/N: 72.22532.013. Vendor: Winbond.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+96,A23052,A23052 8D Report_ICS _UOC-130A HW ID 錯誤,R218 BOM 主替代料阻值不同，主料為64.11535.L06(115K Ω)，替代料64.86625.6D1(86.6K Ω)， SMT打件使用替代料導致ATP 測試時HW ID錯誤,錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+97,A23053,A23053 ADDI CH3 IMQC的78.47510.L14料号空焊不良-来料异常 ,"9/23 VN SMT 生产55.IMQC2.S01V1过程中在AOI炉后站发现78.47510.L14 (0201, 4.7UF) 空焊不良 ≈ 7.3% (59/805). Location: 随机发生不良 (28倍用量：C197 & C1012 & C974...). 初步分析是原材异常问题
+1. Vendor : Murata
+2. PN: 78.47510.L14
+3. DC: 2335",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+98,A23054,"A23054_8D report for FD4-R1產線未依TPI_TN2_0000007406作業，未新增AB13,AB14泡棉",8/17產線未依TPI_TN2_0000007406作業，未新增AB13.14泡棉。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+99,A23055,A23055_8D report for FD4-R1 HSG掉漆現象，回測百格測試Fail,產線反映HSG有掉漆現象，不良率約4%；線邊半成品DC230920回測百格測試Fail。,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+100,A23056,A23056_ 8D report_ LV65C J19 FFC Connector deformation,"10/26, VN ATP3 CH2 LV65C 在Link Main PCBA and Carrier PCBA 站发现Carrier board FFC J19 connector 钢琴盖压伤，导致FFC cable组装不到位，
+不良率：8%（144/1800 ), 初步分析是ATP制程无异常，原因是SMT制程异常",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+101,A23057,A23057 8D Report NW2_RSWB-MR6 R38 damage design issue,10/25 Repair反映Final test fail 2pcs不良，不良原因為損件且位置相同為R38，10/26 PE回查確認損件原因，確認損件是assembly後造成,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+102,A23058,A23058 NW3 MT DLPH-MT1的68.1R0T0.L18错料异常问题-material问题 ,"11/01 VN SMT7217生产55DLPHT1.MG1过程中在炉后AOI发现68.1R0T0.L18（L3位置）错件不良100% (33/33 panel~264pcsNG, MO:NN1DNH100023 )，原因是来料异常问题
+1. Vendor : BaoCheng
+2. PN: 68.1R0T0.L18
+3. DC: 2321",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+103,A23059,A23059 UMM-IBTD2 IC10500 錯件 8D report,"2023/11/3 SMT VI 發現UMM-IBTD2 IC10500錯件 (正確:A3940;錯誤:A3960)
+Impact: 100pcs",錯件,mix part;混件;混料;錯件,物料/零件型號或版本與規格不符（含混件/混料）。
+104,A230602,A230602 LAF62 調料發現物料錯誤,"S1於SMT VI發現由S2廠提供物料零件錯誤，(料號:74.C1211.004 ,Location:FSW4000)應為9 pin 但實物為6 pin。
+，不良率為11.76% (12 /102)。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+105,A23060,A23060_8D report for SAR7-SX1 堆高機操作不當導致一棧板成品翻覆地面,11/14夜班WH操作堆高機搬運作業時摔落且翻覆1板256pcs。(頭上腳下),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+106,A23062,A23062_8D report for SAC1-Y1_PCBA top side component 錯件,PCBA top side component 錯件,錯件,mix part;混件;混料;錯件,物料/零件型號或版本與規格不符（含混件/混料）。
+107,A23063,A23063_ CH2 Victor LVR2 内外不一致,12/13，ATP3 PD反馈LVR2 RFID Pallet Scan 站时发现4pcs with DUT EPC 号码与SFCS系统EPC资料不一致. F/R：2.22% ( 4pcs/ 180pcs),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+108,A23067,A23067_8D report for RSPM-MR1-48FP_U3(72.24646.00T)燒錄Checksum錯誤,U3(72.24646.00T)燒錄Checksum錯誤,錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+109,A24001,A24001_8D_LADT_CH3 Duffy LADT can not log in UI,"On 1/5, FQC function found 9/24pcs model LADT can not login in UI，F/R: 37.5%(9/24), defect picture as below",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+110,A24002,A24002_8D_UMD-RA02_SMT Inline XRAY發現U1氣泡-2024.1.24,"2024/1/11,SMT生產UMD-RA02機種時發現批量U1 BGA氣泡超规格(Spec<=5%)不良,
+集中在SMT MO: KN1ANH120097,不良率: 11%(318/2800),經初步分析為PCB材料問題,PCB P/N: 48.UMDRA02.0GIDYNAG,PCB廠商: DYNAMIC(定穎),PCB D/C:2348,Lot# AI007",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+111,A24003,A24003_8D_LV65C_CH2 Victor LV65C RFID无法读取,"1/12，ATP3 LV65C RFID Write 站发现RFID tag无法读取RFID号码. F/R：100% ( 10pcs/ 10pcs)
+RFID Tag PN: 08.06025.002; 厂商: 恒隆科技(代理商); DC: 2352",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+112,A24004,A24004_8D_VMM-Q8295_BoM Incorrect Substitution,"1/11 ATP report VMM-Q8295 Function Test exceptions after testing. The abnormal test items were concentrated in Ufs_Partition_ToSW, the product can not be booted up (Defect rate: 26 / 26 pcs, 100%); 1/17 Received a notification from IVM BU, confirming that the resistance of the BoM substitute (64.32425.802CJVAG, 32.4 kΩ) is inconsistent with the main material (64.33R25.802JVAG, 33.2 Ω).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+113,A24005,A24005_8D_RXAQ-C9_电阻错件,"1/11 電子倉搖料回庫時發現 SMT3213線下線料退料數量異常. 2-806L 64.18R05.L04AY 多退*2,122顆,備用量:3倍;2-806R 64.18005.L04AY少退*2,230顆,備用量:2倍,经分析确认为BOT面电阻打错件 64.18R05.L04AY(3顆) 18Ω,对应位置:XR7,XR20,SR1386
+64.18005.L04AY(2顆) 180Ω,对应位置:AR3823,AR410
+SMT生產線別: SMT3213 工單: LN1DNH120155 工單批量:2,000pcs,不良率:94.05%(1881/2000)",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+114,A24006,A24006_8D Report_WHV1C_Speaker wire peeled off,"On the January 26th, IPQC inspected and found after installing the speaker wire at combine station, the protective layer was peeled off (reconstituted copper inside).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+115,A24007,A24007_SAR7-SX1_WiFi2 Batch run samples are mixed into normal goods and shipped,SpaceX batch run samples(40pcs) are mixed into normal goods and shipped,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+116,A24008,A24008_8D Report - DNSK-MB1 Cold soldering defects escape to Customer-v2 Eng,"1. On 2024/2/19, WNC ATP production line feedback that DNSK-MB1 product RF test fail which is caused by the location U1 component, and the failure rate is 5.27%(150/2,845).
+SMT PE performed the investigation and analysis immediately.
+2. It was found that solder joints of U1 and the surrounding RLC components are cold soldering with solder power through 3D magnifying glass, as confirmed that the RF test failure is caused by poor SMT soldering quality. Please refer to the Figure1 as below.
+3. During the investigation we confirmed the risk scope was one SMT MO with Qty 9996pcs and the SMT production time is during 2/9 20:00-2/10 6:00 and produced at SMT L1201 line.
+After the risk assessment we determined to quarantine and scraped all these defects. But on 3/14 We found that there are total 2,465pcs defective products had been shipped to customer on 2024/2/23 (Qty:241pcs) and 2024/3/2(Qty 2224pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+117,A24009,A24009_8D_LCS7 CH1_Top cover-hook broken issue,"2/24 VN LCS7 model, H114 line, at the Online FCC station, OP was assembling top cover, it was found that there was an abnormal  sound after the product was assembled. Confirmed with ME, it was found that the hook was broken, causing the abnormal sound.
+ F/R：25% (10/40pcs)
+ Part No: 3P.002JV.11101; Supplier: Qisda; DC: 2405",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+118,A24010,A24010_8D_CH IMQ8F 中磊反饋GPS Desense issue點膠製程優化 8D,"2/27客戶/中磊 因整機GPS Desense issue, 客戶認爲為WNC module訊號幹擾所致， TM至客戶/中磊協助分析,與客戶拆機後發現module有如下問題可能有影響：
+Thermal jelly 被Shielding cover壓合擠壓於.Shielding frame上造成間隙；",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+119,A24011,A24011_8D_UMM-IBTD2_AR2 router bare copper,UMM-IBTD2(55UMM8MP2U.MGCHAG) router bare copper scrap 300 pcs at 2024.03.02.Because spindle is offset when machine maintenance procedures.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+120,A24012,A24012_8D_LV65C_CH2 Victor LV65C MTBF product can’t connect to 2G golden,"3/02， After LV65C MTBF performs for 105 days，found 1pc couldn't connect to 2G golden. F/R：4.35% ( 1pc/ 23pcs)
+PE measure C771 capacitor and found C771 short.
+PN: 78.22610.001; Vendor: SAMSUNG ; DC: 2316",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+121,A24014,A24014_8D_-NW2_RVAB-503_ Production use Wrong AOS FW version_20240328,"On 3/20, P/N 81RVAB53.G14, PQA checked the first product and found that the product used the wrong AOS version. Defective rate 99% (178/180pcs)
+Error AOS version: 8.11.1.0_86056
+Correct AOS version : 8.11.2.0_87947",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+122,A24015,A24015 NW1 Sloan （SCST2-SX1）UTv4 ORT test failure issue,"4/01 QE lab tested ORT of SCST2-SX1 (UTv4) product and detected 2pcs NG ( Thermal Cycling*1pc; Hot Humid*1pc), The defect items are related to bamboo material Supplier: ST (STMicroelectronics); Bamboo material P/N (IC): 74.K0000.002KX; NG Lot code: 6 LC.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+123,A24016,A24016_8D_RDAA-MTK1_ NW3 MT _ATS RF Station Wifi 5Ghz PER check fail at CH1 and CH2 with high false rate,On 04/05; ATS RF station of model RDAA-MTK1 happened failure symptom : Wifi 5G per check fail with high fail rate (6.99%),測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+124,A24017,A24017_8D_EABE-C19_Function test low yield rate issue,"4/10 ATP feedback 81EABE15.G84 (耀登，Antenna(Embedded),1Ghz~6Ghz,Active,Embedded,PCB)，MO:TN1ANJ030865 function test low yield rate，failure rate:1.42%, 104/7320pcs (Error code: ScanMipiBus), there are cutting shift cause the pad in the incorrect position.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+125,A24018,A24018_8D_SAR8-SX1_NW1 Sloan SAR8-SX1 LINEAR IC (FEM) wrong component failure issue,"4/10, when verified SAR8-SX1*10pcs (new P/N), ATP PE detected LINEAR IC (FEM) wrong component, FR :100% (10/10),
+Model P/N: 55SAR801.MG1, Batch run MO: NN1DBJ040009*210 pcs.
+Relative Material PN (IC): 74.K7551.001KX (RLC000VN224040800970) & 74.K7552.001KX (RLC000VN224040800965)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+126,A24019,A24019_8D_ NW1 Sloan UTv4 (Bamboo IC) reel label duplicated issue,"In 4/08, Warehouse have got feedback from supplier ST about bamboo material issue need to isolated. During sorting at material warehouse and found the material risk that lot code label was duplicated in the process of production. Vendor: ST, Material: 74.K0000.002KX, LC Correct : T409RXN0003 , LC Wrong : T409RXN0002 , WH operator :黎文山",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+127,A24020,A24020_8D_LV65_Victor 3rd party during CnS process (Refurbish) found Leakage test fail,Victor 3rd party during CnS process (Refurbish) found Leakage test fail,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+128,A24022,A24022_8D_RSSI-9240_PCB線路受損,PCBA surface where the CPU socket screw is locked is damaged. Investigation revealed that the unassembled WIP and the WIP after DIP had damage PCBA at the same location.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+129,A24023,A24023_ CH3 Irvine IDIN L8 Shortage,"4/25, IDIN model’s the top side SMT order was rejected while the EE inventory was executing Material Picking Order No#  240422-01122 & 240422-01174 due to shortage of Johanson L-07W6N8JV4T part (Top Side, Designator: L8) after the bottom side SMT was done. F/R = 100% ( 1296/1296)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+130,A24024,A24024_8D_JVG3 PCB delamination _,PCB delamination,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+131,A24025,A24025_8D_RGEM-MTK2_NW3 The components at positions J800 and J801 are reversed,"7/04, NW3 MT ATP反馈7/02 SMT7202线体的55RGEMK2.0G7产品发生J800, J801 connector 反向不良100% (3800/3800), MO:NN1DNJ050832, (首次生产在SMT7202). +实际使用替代料: 21.L3313.L01B (两倍用量：J800,J801)
++主料: 21.L3102.L02B",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+132,A24026,A24026_8D_UID-IR2_外包廠TST反應WB水洗後Pad peeling,7/17 外包廠TST反饋Wire bonding水洗後發現Pad peeling ，不良率0.14%(17/12271) 確認不良PCB WNC PN:48.UIDIR2S.0GBGUWAG 供應商: 高德 集中D/C2420 &2421,不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+133,A24027,A24027_8D_LCS7-CH1_PU8 PU5 Fitipower  Material Issue,"On 7/18, VN LCS7 model, at FQC OTA station, FQC sampling detect 1pc PING WIFI 2F Fail issue,  besides the issue also happened in both of LCS7 & LCS3 on production line with high defect  rate and focus on PU8/PU5 material, PN 74.49208.001, DC 2412 & 2415, Vendor FITIPOWER. Defect Rate： LCS7*29pcs/5,193, 0.55%          LCS3*44pcs/1,888, 2.3%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+134,A24028,A24028_8D_RAJB-AB06_NW5  HERTZ LED port RJ45 color issue,"On 7/26, RAJB-AB06 at PCBA test station found Camera LED check fail with high fail rate (12% = 6/50). Phenomenon: Ethernet LED color are inconsistent between ports. PN: 21.I1107.004, 21.I1107.005; Vendor: GLGNET; DC: 2422, 2427; LC: 242201, 242701. Model name: AP-605H-US AP Router; WNC Part Number: 81RAJB08.G11; Affected Quantity: about 2700 PCBA",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+135,A24029,A24029_8D_UTv4 (Catson + Bamboo 2.3 BOM) mixed with Bamboo cut 2.1,During MIS team check the UT v4 shipped data found 91pcs UT v4 (Catson + Bamboo 2.3 BOM) mixed with Bamboo cut 2.1,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+136,A24030,A24030_8D_RAAA-MT5_ NW3 MT Housing Gap out of specifiction,"On 7/31, RAAA-MT5 at ATP Assembly VI found housing GAP out of specification with high fail rate (67.5% = 135/200).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+137,A24031,A24031_8D_UMC-9240PN 混料,8/2 生產SL2生產55UMC94PN9.MGDAWAG 發現 IC料 PN#74.16211.090AG 與料袋PN(74.16281.A90AG)不符,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+138,A24032,A24032_8D_UMC-RDTCEU_ 錯件,"ATP 維修站反應91UMCRTPEM.G05AG 於Download 站testing failed 5 pcs 發現錯件 [location: C381,C813,C814]",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+139,A24033,A24033_8D_UMC-RDTCEU_零件IC1301 於維修站累積21 pcs 不良,"零件IC1301 (PN: 74.C1363.003AG, 供應商: Skyworks) 於維修站累積21 pcs 不良，並集中18 pcs 於D/C:2418
+[error description] Internal Device Cal、Check Phone Communication、ESC_WCDMA_B3)",供應商異常,supplier issue;供應商;廠商,供應商來料品質、交期或標示不符合要求所致。
+140,A24034,A24034_8D_UMC-STD35GC_點膠偏移,2024/9/15 Sidefill量產發現批量偏移異常，MO：TN1ANJ081408，不良率：38.38% (228/594),不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+141,A24035,A24035_8D_RRET-MT1_NW3 MT ETH Bootup fail caused TR401 Open issue,"On 9/26, the ATP Function test stage found ETH Bootup item failed because of the TR401 open. (0.69% =29/4221 pcs)",開路,open;open circuit;開路,電路斷開導致信號或電源無法傳輸。
+142,A24036,A24036_8D_LRG1-CH2_MTBF OTA Ping Fail Issue,"On 10/4, after VN LRG1 MTBF 60 days, the LRG1 devices were retested and detected 2pcs  PING WIFI 2G Fail issue,  MTBF condition: Enable burn in mode; Temp: 40 ±2 ºC;  # SN1: +119746+2425000012 (production date: 6/21/2024) # SN2: +119746+2425000042 (production date: 6/22/2024) Defect Rate： 5%(2/40)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+143,A24037,A24037_8D_WHV1C_C218 wrong material,"During inspection at ATP, Final RF test function failed 5G antenna 1 lower than spec (fail value -1.53, spec 12.5 to 22.5), NG rate: 100% for MO batch run (200/200 pcs).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+144,A24038,A24038_8D_IDIC_ CH3 Irvine D16 IR LED Wrong polarity Lesson Learned issue,"On 10/11, ATP FCT testing station detected that CH3 Irvine IDIC D16 Alternative LED was reverse polarity, defect rate: 100% (20/20)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+145,A24039,A24039 客戶Valeo反饋UMC-9628VGC1 Multek PCB盲孔微裂痕導致開路不良,"Geely claimed to Valeo SZ T-BOX malfunction, further analysis confirmed the defects related to WNC NAD module with ICCID/IMSI read failed or can not start. WNC component level analysis confirmed the failures related to Multek PCB issues;",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+146,A24040,A24040_8D_SAR8-SX1_NW1 QR Barcode Laser Shifted,FQC detected 32 units QR barcode shifted in the right side,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+147,A24041,A24041_8D_SAR8-SX1_NW1 Sloan ORT C1142 crack issue,"On 11/25 and 11/29, ORT encountered no power issue consecutively and C1142 found to be cracked. One instance was at drop corner 5, and the other at drop corner 10.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+148,A24042,A24042_8D_AMA CEM_DPSS-WI1_GPS Fail,"On 2024/11/25, When OP tests RF NG in bulk ( L5 read value = 0 => Material: IC 71.54776.001DR ) with high fail rate: 52/52NG (100%) Spec: L5 POWER: 999.0~ -999.0 dBm
+L5 C/N : 42.0 ~ 38.0",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+149,A24043,A24043_8D_JS7E_CH2 Victor JS7E with rubber foot & bottom cover gap out of spec,"12/9, IPQC detected JS7E model with rubber foot & bottom cover gap out of spec
+Follow JS7E C0421 document: Gap 整圈定义Spec: 0~0.6 mm",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+150,A24044,A24044_8D_LVR2_CH2 Victor LVR2 with mid cover & bottom cover gap out spec,"12/17, IPQC detected LVR2 model with mid cover & bottom cover step out of spec (Pic 1). Follow LVR2 C0421 document: step 整圈定义Spec: -0.2~0.4 mm (Pic 2). ",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+151,A24045,A24045_8D_QSAM1-MR5-PF48_PoE test failed,"2024/12/19 FQC found PoE Test NG during FQC functional test, FR: 11%(4/35). The defective DUT couldn't power on other units.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+152,A24046,A24046_8D_LMD1_CH3 Duffy  Reset button short issue,"12/26, LMD1 FW upgrade station found that 120pcs of products could not be booted up normally. After disassembling the product, it was confirmed that the Heat spreader pressed the C629 and R641 pads at the same time, causing a short circuit. SW3 was in the ""press"" state, causing the product to not be powered on normally",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+153,A24047,A24047_8D_QGW9C-X8I-AS-8_DC test開機異常(錯件),Council Bluffs PN:55QGW9C1.0G3) / MO: TN2DPJ090009 DC test開機異常,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+154,H22001,H22001 JGX1-CA FSAN range setting error-6,"2022/1/8 Calix/Zac informed the following abnormality
+JGX/JGX-R FSAN over range, and disabled the ability to test product on the config check tester (CC 10.10.26.90).
+The last time WNC asked for the FSAN range on 2019/8/5 for 76xGX MDU units.
+Now, WNC FSAN has been used beyond the range, and this range has been used by Mitrastar Taiwan.(CXNK0075CBF4~CXNK0076277B)
+WNC over range: CXNK0075CBF4~CXNK0075D492, and total 2,011 units were used.
+WNC should destroy any FSAN labels that are over range, and go through rework  to re-label FSAN on On-Line-FCC and overwrite FSAN at config check station(CC1).
+Affected products: JGX1-CA (760GX、762GX、763GX、766GX、763GX-R、766GX-R)
+WNC ATP production time: 2021/7/1~2021/12/31",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+155,H22002,H22002 _8D Report_C200 DDR damaged in SMT_20220121,"01/13 RF station meet low pass yield issue, PE check fail PCBA, detect all the fail PCBA with crack DDR(U48).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+156,H22004,"H22004_8D Report_RF 探針異常, 造成RF connector 損件, 將使Throughput fail.","SAR7-SX1做整機EPR batch run, 投至throughput 站點, 發現throughput fail比例偏高. 當下ATP PE立即拆機分析, 發現異常品有RF編號6治具之集中性.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+157,H220101,H220101_Hold shipment-RAWQ-JD11-J ORT测试高温(50℃)宕机,"1/18, ORT测试发现高温(50℃)宕机, 具体不良现象: 高温(50℃)第一次18H左右宕机, 第二次1H左右宕机, 第三次/第四次不到20min宕机(每次间隔4min左右), 不良1pc,不良率50%(1/2), 产品SN: 034201220300157
+ORT测试条件：低温-20°C 48H+高温50°C, 湿度95% 48H",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+158,H220102,H220102 8D Report NW1_SAQG-R1 T1 transformer issue,"1/25 Repair通報SAQG-R1, PN: 81SAQG02.G01 SVT test(PCBA function)單一error code: DC_Curr不良率過高，約為1.43% (9/627)。經FA分析後確認為POWER TRANSFORMER T1 (76.2S605.001 )零件不良，不良現象：低電流無法開機，且以ABA swap分析確認不良現象跟隨零件，不良品D/C:2138, Lot no:211124, Vendor:聯寶電子(Linkcom)；1/26 ATP於投入前進行sorting，不良率:2.9%(12/419)，投產仍有8pcs不良(其中2pcs在RFS 無法開機)，研判異常風險高，ATP產線已停線，成品進行Hold",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+159,H220103,H220103(8D)_JGE1-CA 雷雕版本錯誤,1/11SMT IPQC巡檢時發現55.JGE11.041雷雕版本與SOP不符,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+160,H220105,H220105_SAQG-H1 ATP組裝前發現IC損傷_20220114,"01/13 ATP RF station meet low pass yield issue, PE check fail PCBA, detect all the fail PCBA with crack DDR(U48).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+161,H22017,H22017_8D Report for ORT返回Final站測試peakpower_2 NG,1pcs (SN: BH2M1200172N080319) failed MIC peakpower2 to be out of spec.(1st was 86 ; 2nd test was 89 (SPEC: 90~130) at final test station after returning production line when completing ORT thermal shock test.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+162,H220201,H220201_UMC-9240P ORT1 進行低溫測試後 Calibration Test Fail,"1/28 ORT1通報 UMC-9240PEA, PN: 91UMC94PEA.G03AWAG, TN1VNG010107 ORT1 進行低溫測試後 Calibration Test Fail (4/6 pcs, 66.6%)。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+163,H220202,H220202_8D Report_JVS1 雷雕內容錯誤,Input電壓範圍錯誤，應為12-24V，錯誤為12-48V,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+164,H220203,H220203 Alabama_VN_IPQC detected production line used wrong FCC label for SKU 81RVAQ03.GK2,"02/28 IPQC detected production line used wrong FCC label for SKU 81RVAQ03.GK2.
+Correct label PN: 4L.RVAQ5.00608RX5 (model name: APIN0535/ customer part: 4012911-01)
+Incorrect label PN: 4L.RVAQ5.00508RX5 (model name: APIN0534/ customer part: 4012910-01)
+NG rate : 64.9% (350/539pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+165,H220301,H220301 8D Report NW1_SAQ4-D1 配件Adapter及 AC plug不相容,2/26 Sales通知，客戶反饋SAQ4-D1(91SAQ403.G13)進料檢時發現配件 AC plugs(21.DAPDE.001)不適用於adapter (25.13612.017)，回查確認adapter舊料(25.13612.006)EOL，依客戶ECN導入新料，產線於2022/2使用新料生產，但G13&G14未同步進行AC plugs變更，造成此異常,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+166,H220303,H220303_8D Report-SWA52-S1配對異常(T2立碑),T2立碑,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+167,H220304,H220304_RACQ-RJ77 CPU 空焊_20220311,,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+168,H220305,H220305_JVS1_ORT測試完成後，回流OTA站時NG,經ORT測試，回流產線測試站時在OTA測試FAIL,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+169,H220306,H220306 Alabama RVAQ-52I 发生console port 脱落 (重复发生）,"03/18, Alabama RVAQ-52I, 在Function 2工位，产线在测试时发生8pcs console port 脱落 (不良率：8/1196pcs = 0.7% ), Console port material P/N: 21.M0120.002, vendor name: Take Wing",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+170,H220307,H220307_8D Report_JVS1 FW版本錯誤,3/22 JVS1 FQC抽檢發現FW版本錯誤。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+171,H220309,H220309(8D)_2022.03.30 SD6 ORT2 鹽霧測試failed,"1月份SD6 ORT2 執行Salt Spray Test後, 發現 2台有1台出現Corrosion",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+172,H22034,"H22034_8D Report__D58P1執行ORT1 TCT後, 發現三台回流產線執行氣密測試 fail","D58P1執行ORT1 TCT後, 發現三台(SN: A2VB2210900000281、A2VB2210900000264、A2VB2210900000213)回流產線執行氣密測試 fail",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+173,H22035,H22035_8D report_Griffin Incorrect BOM Contents_20220531,"Geotab informed that there are 3 resistors (R121, R123, R128) were removed from updated main board BOM (GRIFv1MAINv3 [Rev. A8] ), but missed to update the change log after 6500pcs PCBA was done in WNC. After checking, the WNC BOM for lot 6500 pcs still keep R121, R123, R128 in BOM, and the root cause is the EC for WNC BOM was based on GEOTAB’s BOM change log, without compared updated BOM with previous revision. After confirming with GEOTAB, the lot 6500pcs can be continued producing.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+174,H22038,H22038_8D Report_SEQC-D3 Device burn out after 5G OTA test,SEQC-D3 Device burn out after 5G OTA test.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+175,H220401,H220401_8D Report_JVS1 ATTVerizon mbn file were not written issue_20220428,"VG54 TM 04/14 found that ATT & Verizon mbn files were not written in both test plan and QDR station program, which will cause LTE connection issue.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+176,H220402,H220402 UMD-RA02 FCC Label ORT高溫85度後起泡,"TN1APG030139 UMD-RA02 ORT1 執行高溫85℃測試發現2D Label 翹起 FAIL
+Test Condition:85℃/24hrs ；Result: 3pcs氣泡位置及大小均不同
+P1607917-51-F:SBLI22101000715輕微氣泡，正常距離目視下難發現
+P1607917-51-F:SBLI22101000696輕微氣泡，正常距離目視下難發現
+P1607917-51-F:SBLI22101000710明顯氣泡
+FCC Label (4L.UMDRA.006AG/ 4L.UMDRA.006XJM2AG) D/C: 2214，供應商:CYMMETRIK(正美) 
+Radome(56.0UMDR.005AG/ 56.0UMDR.011XAG) D/C: 待確認，供應商:INTERPLEX(怡得樂電子(杭州)有限公司)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+177,H220403,H220403-8D Report -UMD-RN03_成品Housing角落有裂痕20220418,"組裝4/18 UMD-RN03反應_成品Housing 螺絲孔角落有裂痕,不良率:84.21%(16/19) Hold Shipment/Production",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+178,H220405,H220405 8D Hold shipment report,"On April-27th, during normal inspection at FQC station, FQC detected 3pc NG/160 ( A:1pc is NG with its panic alarm, B: 1 pcs is NG with its normal function display C: 1pc is NG with the battery pin connector) (3/160) 1.875%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+179,H220406,H220406 8D for UOC-2630M C468 pad掀起 ,"ATP BLT RSSI 測項fail, 經ATP 維修員檢查發現C468 pad掀起",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+180,H220407,H220407 Roger RJ77捷雷天線貼附後泡棉與背膠脫落導致搖晃異音 8D-Mandy 5-31,"4/28 NQJ製造中心Ⅲ(NW5) 反饋RJ77捷雷天線貼附後泡棉與背膠脫落導致搖晃異音,F/R: 4/500=0.8% ,NG D/C: 2210 Spec: 不允許有脫落",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+181,H220408,H220408_QSA95-X8B-AS-16P_Adapter上電後無反應,FQC使用Adapter上電後LED無亮燈，拆殼後發現U86已燒燬,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+182,H220409,H220409_ RXAB-HC57 客户R2452P02版本 FW不良,"4/1, 接PM通知 Hero要求Hold使用版本2452P02出货软件生产的WA6300系列所有产品.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+183,H220410,H220410(8D)_2022.04.14 LS03 ORT2 落摔測試failed,"3月份LS03 ORT2 2pcs在經過高溫高濕、低溫儲存、落摔測試後有以下現象發生
+1. 異常現象:HQ 測試後會S2 DUT搖晃內部有異音,疑似零件脫落.
+2. 送產線執行功能測試NG(OTA test failed, Final test failed) ",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+184,H220502,H220502_ RNRA-R24-RY ORT 测试throughput时产品重启,"5/9 RNRA-R24-RY(Roger) ORT测试throughput时发现產品斷Ping重启(约测试30min开始重启),不良率:100%(2/2); Hold 厂内成品:198PCS",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+185,H220503,H220503_RACQ-RJ77产测在RF&Check BI两站均出现产品反复重启,"5/11 RACQ-RJ77 在RF&Check B/I两站均发现产品自动重启不良(RF:23pcs+Check B/I:5pcs)不良率:1.22%(28/2,301).Hold 厂内成品：1,159 pcs.",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+186,H220504,H220504 Grace missing thermal paste at U5 ( RAM) position issue 8D report ,"05/14, Grace IPQC implemented audit line W111 and found 1pcs was missed thermal paste at U5 ( RAM) position. PD sorted 744pcs sub-assembly on line and found 4pcs with same problem.
+PN: 57SAQ511.G11EA.
+MO: NN1DNG040513.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+187,H220505,H220505_UID-IR2M_Fakra connector混料,"5/17 FQC目檢檢驗外觀發現有兩種不同FAKRA connector，確認為混料 正確: 21.G2940.004JXAG 錯誤: 21.G2940.000AG
+MO:TN1ANG050258",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+188,H220506,H220506_8D report_NW2_RVRB-MI8 T1 transformer issue_Final,"5.19 收到客戶端反饋LDT0687-50R (WNC:76.2S068.001) 測試發現異常，QR code測站無法正常開機分析結果為Transformer不良造成,更換後恢復正常,臺北業務取回2PCS 樣品，對產品進行功能測試
+5.26 收到客戶端反饋LDT0687-50R DC2210還有不良產生共（44PCS）,臺北業務取回10PCS（DC2210 9PCS;
+DC2213 1PCS 不良現象與DC 2210 一樣）
+5.19 對取回來的2PCS樣品進行功能測試,發現只有耐壓異常
+5.26 對取回來的10PCS樣品進行耐壓及功能測試,9PCS DC2210;1PCS DC2213 發現和上次異常一致,只是耐壓異常
+耐壓異常判定：耐壓測試顯示PASS為良品;顯示FAIL為NG品",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+189,H220507,"H220507_8D Report_XRAV-1貼標不良, 超出鐵框, 印字模糊","XRAV-1 SMT IPQC 5/11夜班於ATB VI站發現Label有超出鐵框之情形，該批判批退請PD Sorting。
+同一工單，IPQC 5/12日班於ATB VI站又發現Label有貼附方向錯誤(轉90度)、印字模糊無法辨識及缺碼情形。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+190,H220508,H220508 Zebra-8LP power Adapter issue_20220517,"5/10 客戶反應LITE-ON adapter未阻絕AC & DC ground，造成switch 啟動時會有shut down的問題，WIP須全數Hold Sipping
+Issue on Liteon PSU:
+The AC ground and DC ground are not isolated in the PSU.
+Shutdown condition:
+When an end device which is also powered by a PSU with non-isolated ground, the PSU gets shorted and shuts down.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+191,H220510,H220510 Raisin-16 Burn In Power bank check fail_20220517,"5/23 PE反應Burn In Failure rate high 28.4%(33/116), RD確認error code 主要為 Burn-in Power bank check fail
+RD確認在高溫情況下(B/I 50℃, 8HR)，margin的component 會有誤動作, 需改週邊電阻來提高design margin
+RD提出需將R1364阻值下修, 確保PD_PG_PSE在工作溫度內皆符合VIH, VIL 規格",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+192,H220512,H220512(8D)_2022.05.27 SD6 ORT Failed,"SD6 每周執行ORT1 20台，其中高溫(+65oC, 48hr)10台、低溫(-40oC, 48hr)10台，5/23 送樣的結果於5/26 FQC測試，高溫一台無法開機、低溫一台無法開機",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+193,H22055,H22055_LVR2 上盖卡勾断裂issue ,"8/16, 5:00am~9:00am, LVR2 Online FCC1站 (Line: H202) 发现组完上盖的产品摇晃异音,拆机分析确认组上盖/
+Housing发生上盖卡勾断裂,不良率: 27/694=3.89%.
+上盖料号: 3P.001JA.111 (模号: 2-1, 2-2), Supplier: 龙生; D/C: 0721(实际生产日期).",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+194,H22057,H22057-8D WHV1C Rubber foot NG,"8/20, ATP FQC detected 1 pcs that its rubber foot peeled off. 1 PCS/80 NG – 1.25%
+WNC P/N: 81WHV1C1.G07; Line:(W108-PK); Material P/N: 34.FWHV1.002; Material date code: 2232, Supplier name: Xin Kai
+OK: The rubber foot doesn’t lift up after being stick to the housing NG: The rubber foot lift up after being stick to the housing",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+195,H220602,H220602 Breit_VN_IPQC Breit One Puck barcode grade check fail 8D report,"06/14 Breit IPQC 稽核自动化线发现2pcs 产品标签2D 条码颜色异常（钱色）进行使用SR2000等级确认这两台2D 条码不符合客户要求只能达到F等级客户要求 （A,B,C）。
+PN： 81RIMR03.G39DT.
+Line： 自动化线 （W311-PK）",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+196,H220604,H220604_RHHY-AG5_Test program issue 8D report,"2022/06/20: When PE double checked DUT in Online FCC station, detected that DUT already test PASS at Function test station but it wasn’t burned eFuse FW. After checking system, found out that issue already happened from 2022/06/18, 10:00 AM.
+PN: 81RHHY01.G01
+NG rate: 100.00% (2596 pcs )",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+197,H220606,H220606(8D)_2022.06.13 SD6FQC抽測不過電,"6/13 FQC例行抽測發現 11pcs SD6 Failed，第一步驟供電時，SWM1-2pcs, SWM2-9pcs無法過電
+PE確認產品現象，發現D2(對應SWM2), D5(對應SWM1) 短路
+SD6-NP 共有3個Port可供電-PWR, SWM1, SWM2， 回查產線，僅MER_LT, MER_HT站可檢查SWM2無法過電問題，其餘站點僅可檢查PWR 是否供電",短路,short;short circuit;短路,導體間非預期接通造成異常電流。
+198,H220607,H220607(8D)_JGX1-CA UL安規不符 停止出貨,"UL工檢auditor 於2021/6/30首次稽核6JGX用料50.CJGX1.001，發現供應商(VIZA Electronics)並非UL合格的線材加工廠，要求WNC改善
+UL工檢auditor 於2022/6/17再次稽核6JGX用料50.CJGX1.001，發現依然未符合要求，遂要求所有JGX1的產品不得再使用UL Logo 出貨，且要提供目前廠內尚未出貨的JGX1數量
+如要出貨，必須要移除UL logo，且須提供照片給UL老師查證後，才可放行出貨",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+199,H220608,H220608(8D)_2022.06.22 LS03 彩盒SN與實體SN不符,"FQC抽測已包裝之成品，發現彩盒上Label的SN與包裝內的實機SN不符
+彩盒：2206H40005196 
+實體：2206H40005872",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+200,H220609,H220609(8D)_LS03 HWID錯誤ISSUE_20220704,6/27 - 6/28 LS03 PE 查看 log，發現 HW ID 設定錯誤,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+201,H220611,H220611_8D Report_JVS2 FQC抽驗到1 pc行為異常_20221213,6/14 FQC測到1 pcs fail，NG現象為產測過程中，行為不正常，無法正常測試,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+202,H220612,H220612_8D Report_JVS2 FQC test fail_20230612,6/16 FQC測到6 pcs fail，1 pcs為LTE數值低於規格，5 pcs為GPS fail,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+203,H22063,H22063_LVD1 Master Ver.错误issue,"9/21夜班, 在LVD1 FQC Function 站，FQC抽验发现1pc Master Ver 错误（Spec：0.5.6.204，实际错误ver：0.0.0.0）。不良率：1/32=3.1%",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+204,H22065,H22065_8D report_LVR2暂时停止使用粉红胶,"9/23 , Victor 客户来访巡线发现，在H202线生产LVR2机种时，在组Main PCBA, IO PCBA, FRONT Thermal Plate及REAR Thermal Plate站同时使用粉红Thermal Jelly与蓝色Thermal Jelly替代Thermal pad，
+客户要求WNC澄清为何同时使用2种颜色Thermal Jelly，暂时停止使用粉红Thermal Jelly
+料号：38.00035.002 ； 不良率：35398/114774=30.8%",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+205,H220701,"H220701_8D Report NW2_RVAQ-52I Function Test Ping Fail(U98错件,纬创外包).","7/12 WD201線Alabama RVAQ-52I Function test站 Ping Fail,F//R 60%(6/10).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+206,H220702,H220702 8D report for NW2_RAWQ-MR1 MAC duplicate issue,"7/7客戶RI 檢驗 RAWQ-MR1 91RAWQ03.G02時發現MAC與客戶Dashboard上配對的MAC不同,不良率3.75%(6/160) DB MAC為WNC庫存MAC(尚未使用MAC)，客戶開始調查異常原因；7/19生產客戶RI 檢驗整筆發現相同異常，7/20客戶通知WNC 暫停ATP生產，待客戶US端確認DB與MAC派發問題",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+207,H220703,H220703(8D)_2022.07.20 FD4 X-POL failed,"Issue Date : 2022/07/19
+MN / PN : FD4-R1/91.FD4R1.GT2
+因S2抽測損壞X-pol馬達，7/19由RD協助進行FD4 例行性抽測X-POL於 Sat99 的 20.2GHz 數值偏低(16.11dB,spec >18dB)
+Fail rate : 1/2=50% (7/12 生產)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+208,H220704,H220704(8D)_2022.07.28 FD4 CH Gain failed,"Issue Date : 2022/07/20
+MN / PN : FD4-R1/91.FD4R1.GT2
+FD4R1/91.FD4R1.GT2 Channel power於22P測試不良，疑似由U651 M3TEK M3161(P/N:74.43161.001)造成
+Fail Rate 1.09% (49/4473),
+不良品分析ABA
+ AB (M3TEK to TI) PASS:  (>5PCS),  ABA NG (>5PCS) ",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+209,H220705,H220705_RTFN-VG2_55RTFN03.G02_ANT1缺件(掉件),FQC抽檢6pcs發現其中1pcs於ANT1位置缺件，批退共計100pcs。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+210,H22073,H22073 _8D Report_for LV65 _Ethernet cables NG 1109,LV65/91.LV651.G03 FW 0.2.24.1 更新發現3pcs Ethernet cables NG,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+211,H22074,H22074 （3D报告）LVP2的3S.004FH.111屏蔽框假焊空焊不良（来料异常）,"关于11.04号VN区域白班生产过程中发现在SMT7211生产LVP2的55IMG22V.MGB小卡有20/1000pcs 屏蔽框被假焊空焊不良（不良率：2%），目前相关部门已经确认异常问题是来料异常问题，影响MO: NN1CNG100122 & NN1CNG100123，具体材料异常的信息如下：
+①，屏蔽框的料号：3S.004FH.111
+②，供应商：JFS
+③，DC：2242 & 2243",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+212,H22080,H22080 QA 8D Report Vita WHV1C run the wrong HW version,"On Nov-29th, PE detected that PD has run the wrong hardware version program of the P/N: 81WHV1C1.G07
+OK: F.15
+NG: F.12",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+213,H220802,H220802 8D report for UID-IR2M-螺絲孔上錫異常,8/07 VI station feedback the screw hole to be added solder paste on pad for 外觀不良.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+214,H220803,H220803_Breit_VN_FQC One Puck remote control non-functional 8D report,"On 08/16 Breit FQC tested at customer code check station and found 6pcs RCU non-functional (the IR led was not light and couldn’t remote the DUT)
+PN： 91RIMR03.G38DT; MO: NN1DNG080014
+Line： Automation line （W311-PK）
+FQC sample quantity: 200 pcs
+NG rate: 6/200 = 3 %
+RCU PN: 30.04801.001DT
+RCU Date code: 2214",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+215,H220805,H220805(8D)_2022.08.09 FD4 ORT2高溫高濕 Failed,"Issue Date : 2022/08/09
+MN / PN : FD4-R1/91.FD4R1.GT2
+FD4R1/91.FD4R1.GT2 經過ORT2→Leakage→LT-40℃ 72hr→Thermal Cycle-40℃~65℃ 100cycles→HTHH 65℃ 85%RH 72hr, Test Failed, LO值偏低(16196.69,spec:16197)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+216,H220806,H220806_8D Report_JVS1 HASA fail_20221213,JVS1(SN: G6EN-WYB-DBP)於8/10執行完HASA test後於ORT Lab執行Function test，結果fail (fail item: 讀不出ICCID)，且DUT輕輕搖晃有異音,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+217,H220808,H220808 Report_IVM_UMC-515CAN_IC1501 Solder Short_1017_ENG,"8/25 3 pcs solder excess found after NAD module mounted onto the TCU
+8/31 100% solder ball around all components during the incoming check on on-hand stock in Changchun",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+218,H220810,H220810_8D Report_JVS3 FQC測試1 pc行為異常_20221222,JVS3(SN: GXVE-TR2-983) FQC於8/25檢驗到1 pc fail，該pc performance異常(trigger後隨即亮紅燈，Uart卡住無法下command),測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+219,H220811,H220811_SEQC-D3_U12冷焊造成開機異常,"Model: SEQC-D3
+P/N: 81SEQC31.G15
+MO: TN2DNG070226
+Issue Date : Aug 26, 2022
+Description:機台開機異常，回烘eMMC(U12)位置可恢復正常開機",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+220,H22084,H22084 (Hold shipment) QA 8D Report Vita WHV1C Ghost touch issue,"December 8, 2022, during normal night shift inspection, FQC detected 22/80 PCS (27.5%) has ghost touch issue.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+221,H220901,H220901-8D Vivint WHVP2 laser issue,"On Sep-12, Night Shift, at IPQC check FAI and detected 6/6pcs with laser NG, Rate: 100%
+NG: SN:1202236004477 (no space between“ SN:” and “1202236004477” words) and Assembled inVietnam (no space between “ in” and Vietnam” words) OK: SN: 1202236003843 (has space between“ SN:” and “1202236003843” words) and Assembled in Vietnam (has space between “ in” and Vietnam” words)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+222,H220905,H220905_SEQC-D1_SMA母頭變型,"Model: SEQC-D1
+P/N: 81SEQC02.G16 / 81SEQC02.G17
+MO: TN2DNG070211
+SN: WB2235RB017323
+Issue Date : Sep 1, 2022
+Description: IPQC巡檢時，發現已組殼的產品SMA母座接頭變形",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+223,H220906,H220906_8D Report_NW2_RVAQ-MR3 R594＆R597 損件  20221010-V1,9/23 RVAQ-MR3 81RVAQ03.GM1 維修反映7pcs R597 /R594 兩顆電阻損件，經確認為9/20 導入正面壓合治具，治具與PCBA R597/R594干涉損件異常。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+224,H221001,"H221001_供應商(MPS)通知物料(PNMP8892GL-0012-Z, DC 2227)匡列為品質風險批","Model: SAR7
+P/N: 91SAR701.G28
+MO: TN2DNG080257、TN2DBG090002、TN2DNG090102、 TN2DNG090166
+SN: All affected PCBA SN
+Issue Date : Jul 14, 2022
+Description:供應商(MPS)通知針對P461536.8AQT/P461536.8QT (PN:MP8891GL-001A-Z)這個lot (DC 2226)做STRM (ORT) 時有1片IC fail (1/200)，因相鄰lot (同封裝製程PN:MP8892GL-0012-Z, DC 2227)出貨給WNC故通知WNC此風險批匡列。",供應商異常,supplier issue;供應商;廠商,供應商來料品質、交期或標示不符合要求所致。
+225,H221003,H221003_8D Report_JVS2 GPS fail issue_20230612,"Model: JVS2
+P/N: 81.JVS21.G05
+MO: TN2CNG090371
+SN: GYVJ-UTF-X96
+Issue Date : Oct 18, 2022
+Description: 10/18 FQC測到1 pc GPS fail (SN: GYVJ-UTF-X96)，今年6月份也有發生，為再發issue。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+226,H221005,H221005_8D Report_NW2_RXAQ-MR1_81RXAQ03.G70_74.K4730.001DR 零件裸銅,"10/25 RXAQ-MR1 81RXAQ03.G70 Radio站IQ_CONNECT_Wlan0_Cal Fail，不良率:6.9%(13/188)。經FA確認不良為零件側面漏銅74.K4730.001DR(QPF4730TR13, QORVO)，不良集中DC:2230 LotNUM: F10-9FDPA5",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+227,H221007,H221007_8D Report_JVS3 FQC抽到2 pc為customer mode_20221212,"Model: JVS3
+P/N: 81.JVS31.G06
+MO: TN2CNG090271
+SN: G23K-3DX-AUC、GYWC-WJN-BSG
+Issue Date : Oct 24, 2022
+Description: 10/24 FQC檢驗到2 pcs為customer mode (SN: G23K-3DX-AUC、GYWC-WJN-BSG)，正常品須為shipping mode.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+228,H221204,H221204 RSRD-EAA 供應商材料錯誤-7,"MN / PN: RSRD-EAA / 55RSRD02.0GA (NW3, Router 主板,PC Engines)
+MO: TN2DNG110331；異常單號: WS2-QCEXCP221209001
+2022/12/4 SMT夜班PE反應AOI 比對Location: S1有極性反異常Alarm，確認打件位置、方向皆正確，但與Datasheet比對有外觀不符現象
+PE確認零件data sheet無更新紀錄、無特採資訊，請產線暫停並切換其他工單作業，待早班釐清差異
+12/5 PE與PM確認此料件為替料，PN應為22.41620.001，因主料22.61620.001將於2023/3 EOL，目前CE預計安排2023/1進行替料batch驗證
+Location: S1；正確PN: 22.61620.001，錯誤PN: 22.41620.001；供應商: DAWNING 達立科技
+12/7 VQM與供應商初步確認: 該異常為供應商將替料22.41620.001在未經WNC approve下以PN: 22.61620.001身分出貨WNC，且於2022/5月後出貨之料件PN: 22.61620.001其實體料件皆為PN: 22.41620.001 (DateCode:2221後皆為風險品)
+影響機種: RDRK-A2、RDRK-A3、RSRD-EAA",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+229,H23001,H23001-RDAA-MT7 反饋永富利廠商的膠密封效果不佳 8D,"1/16 製造中心Ⅱ（NW3）反饋RDAA-MT7永富利膠固化時間短,密封效果不佳, 導致氣測不良",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+230,H23002,H23002_8D Report for SD6 ORT Failed,"MN / PN: SD6-NP / 91.SD6NP.GT2 
+MO: TN2CNG100341
+SD6 ORT2 振動測試 5pcs，2pcs Failed，Failed Description: Output Voltage too low. (Spec: 12.75~14, Value:2~3)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+231,H23003,H23003_QA 8D report UCT-MV1M 治具螺絲鬆脫導致產品固定位置損件,"1/17維修站分析DashCam Image Outward 測項ISP_EMER NG品8pcs時
+發現PN:91UCTM1MU3N.GA1KT Mainboard上C431固定位置損件，為批量性異常",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+232,H23004,H23004_RAWQ-JD11-J FQC ORT發現 Lens面板起翘8D Report,"2023/1/24 製造中Ⅲ（NW5）FQC ORT測試發現RAWQ-JD11-J機殼 Lens面板起翘,F/R：14.29%(1/7)，不良品生产日期：20221125,廠商： 谷崧&沃頓",供應商異常,supplier issue;供應商;廠商,供應商來料品質、交期或標示不符合要求所致。
+233,H23005,H23005_8D Report for Qualpie-48LP 開機紫燈不良,"MN / PN: QSA73-OAM-MR-48LP / 81QSA731.G07 (WIF,交換機,Meraki)
+ATP MO: TN2DBG120069；異常單號: WS2-QCEXCP230131001
+1/18 & 1/19 FQC抽驗Qualpie/Quagga-48LP共發現3台紫燈不良，為FW15 導入後產出；觀察DUT無法正常開機連上客戶dashboard進行RI，目前疑似為New FW15影響，待客戶解析中
+FQC Sampling NG rate:
+Qualpie-48LP/TN2DBG120069/150pcs: 6% (2/33)
+Quagga-48LP/TN2DNG120191/300pcs: 3% (1/33)
+異常品上電SYS LED狀態: 橘藍紫橘藍紫 (keep紫燈)，且RJ45 LED燈不亮
+正常品上電SYS LED狀態: 橘七彩橘白，且RJ45 LED 燈亮起
+PE確認異常品SFCS無重工紀錄，各站點test log正常
+X-ray檢驗security IC(U3, U5, U36, U37) 無打件異常，1/30已將異常機台出貨客戶和HQ for FA (1/30 done)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+234,H23006,H23006_8D Report for D58P1 背蓋Cable處UV膠凸出超規,ThroFQC抽驗D58P1發現1台背蓋Cable處UV膠凸出有超規情況,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+235,H23007,H23007 T6M eMMC issue,"經PE/ FA 分析為 ,測項 eMMC不良與TI Soc  71.17461.A0UHUAG 
+D/C :2244/2245 與產品匹配性的問題,造成良率低測試不穩定
+",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+236,H23008,H23008 QA 8D Report Vita WHV1C Ghost touch issue has mixed NG and OK materials,"On 2/06, FQC verified that WHV1C had been sorted through the Ghost Touch issue using Haier LCM and found 13pcs Ghost Touch issue, further confirming that sorted OK & NG LCM was mixed together. In order to resume the production line, the factory replaced it with another batch of Haier that had sorted OK (17920pcs), but it was found that this batch also had a Ghost Touch Issue.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+237,H23009,H23009_8D Report for D58P1 FQC反映2pcs 按壓Reset button不會進行Reset,FQC反映2pcs 按壓Reset button不會進行Reset,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+238,H230103,H230103 Y2023 Lessons Learned-銳捷R5CI-RJ80鐵件Rohs檢測超標 Eric,1/31 製造中心Ⅲ（NW5）QS反饋R5CI-RJ80穩通RoHS Cd鎘超標（Cd=115ppm超標，RoHS管控Cd<100ppm）,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+239,H230109,H230109_RJ80机壳Cd超标8D,"2022年1月14日接客户启佳反馈我司出货料号34.CR5CI.004X & 34.WR5CI.006X RoHs检测超标，经第三方检测显示Cd限值100ppm,实测115ppm",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+240,H23010,H23010_Hold Shipment Notice_Broadcom RFIC BCM43794B0IFFBG hang-up under low temperature,"AP5050D S2 PCBA returned and applied HASA verification on 2/15, found Wi-Fi SSID Missing at 5G under low temperature at -40 degree C.  
+This failure symptom is related to CPU (U63, BCM49418B0IFEBG_SoC) or RFIC (BCM43794B0IFFBG_U14-2G/U26-5G/U77-6G) malfunction. RD team adopts HW/SW/Environment/Combined Tests to clarify root cause,  it is considered the root cause is caused by RFIC at  the temperature down to -35 degree C.  
+Further 2pcs AP5050U (Built by S1) were verified and found one DUT also failed at Low Temperature.
+The symptom of RFIC could be resolved by restarting its interface.  NG DC: 2205/ CCZ0507700. ",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+241,H23011,H23011_8D Report for SAR7-SX1 ATP FQC反映1pc測試fail，測站電腦無法ping到DUT,FQC測站電腦無法ping到DUT導致無法正常啟動，確認現象為Ethernet LAN訊號無法連線。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+242,H23012,H23012NQJ製造中心Ⅱ（CEM）ATP反饋DNSK-MB1 KINGBRIGHT LED異色報告,"2/15ATP FInal test 站發現DNSK-MB1(81DNSK13.G17)機種 LED(D1/D3) 黃色燈發橙異常,不良率1.54%(50/3,240)",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+243,H23013,H23013_8D Report_AMA_UMD-RN03_Interference HALT Issue,"2023/2/20 UMD-RN03(MRR150)因車廠測試發現產品在Power on時出現Interference HALT Issue，但OEM確認周邊無異常訊號
+異常數量/不良率: Master*50+Slave*50+CS*5，客戶反饋CS*5都有此異常，其餘detail資料待PM更新
+※補充: 每台車裝配3pcs UMD-RN03，(左邊)Master& (右邊)Slave& (中間)Center Slave
+當時CS生產9pcs(TN1ARG110061)，除5pcs出貨給客戶，其餘其中2pcs在WNC有發現相同現象(A22Y290011CS, A22Y300012L)
+客戶反饋的異常產品資訊:  A22Y290009CS(U2DTM350000DC01)_81.UMDRN3CS.G10AG_TN1ARG110061 N4N2M30D000PC01_55.UMD375CS.SGJAG_TN1AEG070014",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+244,H23014,"H23014 QA 8D Report Vita WHVP2 FCC,Box QR code content un-matched.","On Feb-22nd,2023. During Nene re-work build inspection, FQC detected 5/72 pcs (6.94%) that its QR code content between the FCC label and the box label un-match. (PIC 1)
+OK: vivint.com/self-install?s=1202240000358&h=B.0&p=VS-HP2000-001&qr=A.0
+NG: vivint.com/self-install?s=1202240000358&f=3.22.1.39125&h=B.0&p=VS-HP2000-001&qr=A.0",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+245,H23015,H23015_ 8D Report-IDR1 Water Proof Test Fail  issue,"IDR1 ORT1 Water Proof test fail, 1pcs 屏幕进水(圖1) DR:1/5=20%. 測試條件：Water depth：5m Dwell time：2 hours
+不良品回產線氣測0.089sccm,煮水不良品洩漏點為機殼LENS下角(兩處,圖2紅圈)
+煮水測試條件:水溫60度，時間6min
+材料料號: 6B.YIDR1.00A
+D/C 2306，廠商：金名山",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+246,H23016,H23016_8D Report for UT V3 包裝由ATP變動至DIP導致Carton ID無完整線別資訊,ATP FQC發現Carton ID線體編碼為DIP線體且線別資訊不完整,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+247,H23017,H23017 Hold shipment RABA-AH7 ORT test ping fail,"3/14,QE做HASA測試前,發現RABA-AH7常溫ping10分鐘後Ping fail, 自动重启. F/R 25%(1/4)(SN:05102303102147),拆機發現PCBA bottom面錫渣殘留,導致1.8V&3.3V线路對地短路(影响5G Wi-Fi IC).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+248,H23018,H23018_8D report for R5NI-HC68_81R5NI02.G07X-Function站 Check Arm Version Fail,"1.2023/3/16,R5NI-HC68_81R5NI02.G07X在ATP投线时Function Check Arm Version fail *14.50%(58/400)
+2.经PE分析不良跟随Location:AU1,PN:71.59025.001,D/C:2102,LOT:AU90584.9,Supplier:ADI",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+249,H23019,H23019_ 8D Report for S3 3F burn in room 滅火器乾粉噴灑造成汙染產品,"2023/03/20(㇐) 23:44 , Burn in room#1警報，前往查看發現其中㇐顆自動乾粉滅火器擊發，造成產品汙染",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+250,H23020,H23020 QA 8D Report Spider JKS3-SP FQC detected strange sound when shaking product,"On night shift of Mar-20th, FQC performed sampling inspection 81.JKS30.G12V1 and detected 1/32pcs (3.1%) with strange sound. Then, opened housing and found SH3 shielding cover was dropped.
+After test soldering and found DC 2309, 2311 soldering properties is NG.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+251,H23022,H23022 QA 8D Report Carter UOC-2650M EPR EQT drop testing failed,"3月22号，QE LAB有执行EPR1/2 EQT 验证drop test item (Drop test from 1 meter high on to steel surface, each side drop 2 times, total drop 12 times)，发生2/3pcs = 66.67% fail (天线脱落*1pcs, 卡勾断裂*1pcs).",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+252,H23023,H23023_8D Report for RTOS 配件_太陽能板與成品 DC cable連接時，發現難以插入,RTOS配件(太陽能板)與成品 DC cable連接時，發現難以插入,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+253,H23024,H23024_8D Report for RSSI-9240_U67燒錄IC錯件_0703,"Model: RSSI-9240
+P/N: 55RSSI03.0G1
+MO: TN2DPH030011
+Description: SMT FQC執行工單首件核對發現U67位置燒錄IC錯件，工單不良率：11.7% (27/230)
+此為同一顆IC料號 (74.P1220.002)，但燒錄不同Program打件在U67、U55位置。
+U67打點顏色為紅色、U55打點顏色為綠色。",錯件,mix part;混件;混料;錯件,物料/零件型號或版本與規格不符（含混件/混料）。
+254,H23025,H23025 8D Report of SAR7-SX1 ATP FQC反映1pc測試fail，測站電腦無法ping到DUT,FQC測站電腦無法ping到DUT導致無法正常啟動，確認現象為Ethernet LAN訊號無法連線。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+255,H23026,H23026_RXRB-MIB Gasket Falling Issue_20230330,3/30 RXRB-MIB (81RXRB03.G22) 於FQC發現2pcs機台內部Gasket己脫落位移至Console Port位置。產線對己包裝成品4箱進行檢查，亦發現2台Gasket己脫落位移。Gasket位移將影響產品De-sense，若是與零件或PIN針接觸將會造成電性短路，致使產品功能異常。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+256,H23029,H23029_8D report_LAWI antenna short,"On 4/07 Day shift，OTA found 1pcs fail LTE at ANT1 location, SN: X94VA3DJ004983 (F/R: 2.12% , 1/47pcs) After Burn-in and re-test at OTA station. DUT fail at LTE ANT1. (Fail value: -88.4 dBm, Spec: [-80,-60dBm]",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+257,H230304,H230304_8D Report-RBLD-AG3 ORT 后无声音,"3/22 RBLD-AG3(August) ORT 高温高湿测试后，回流产测final NG 无声音*6pcs, F/R:6/20=30%
+Test Condition(客户定义,每季度1次+单独PO):
+Specimen Status: Operational;Temperature: 50℃,90%RH;Dwell time: 5days",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+258,H23031,H23031_Hold Shipment_AMA_UID-IR2M_ORT MCUFAULT FAIL,4/13 ORT1低溫-40℃ Storage後，於IR LED TEST & EEPROM測試時，測出產品IRLED MCUFAULT FAIL 1pc NG,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+259,H23033,H23033_8D Report_EABY-MU1_Label印字斷字斷碼_20230613,4/25 FQC夜班抽驗發現Label印字斷字斷碼影響判讀，不良率為35%(7/20),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+260,H23034,H23034_8D Report for FD4 Water Proof Failed,"Model：FD4
+Issue Date：2023/04/28
+MN / PN：91.FD4R1.GT2
+Waterproof Test Fail，初步分析疑似：Cap (金振揚) / Housing (詮能) 異常導致組裝後測試 Fail。
+Defect Rate：20% (1/5)
+ 異常材料(Vender)：Cap (金振揚) / Housing (詮能) ",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+261,H23035,H23035_8D Report for PikeZ ORT fail eMMC info NG,"MN / PN: QSA67-X8B-AS-48 / 91QSA671.G10  / WIF , Switch ,  Arista 
+ATP MO:TN2DNH030005 /  TN2DNH030006，異常單號: WS2-QCEXCP230503001
+5/2 ORT test fail，eMMC_info NG，不良率 11.1% (2/18)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+262,H23036,H23036_8D Report for RTOS-AR1 SMT IPQC 反映U8無執行燒錄作業,SMT IPQC巡檢發現，U8無燒錄打點記號。經確認，已打件之U8無執行燒錄作業(一大板18連板，Total 38大板),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+263,H23037,H23037_8D Report for QSB11-OAQ-ER_81QSB111.G02_PSU Cushion成品(新料)與半成品(舊料)混用,"Model: QSB11-OAQ-ER
+P/N: 81QSB111.G02
+MO: TN2DEH030018
+Description: During FQC inspection found PSU insert missing non-woven label. Sampling defect rate is 20% (1F/5) to reject this lot (pallet) and request quick sorting of the rejected pallet, with sorting result of the pallet: fail rate 72% (40F/55)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+264,H23038,H23038_8D Report for SEQC-D1_ATP Function站NG_20230814,5/11 ATP PE發現Function Test站有批量性的不良，NG項目為Ethernet NG，經PE分析為R330、R1038阻值超規,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+265,H23039,H23039_8D Report for Qualpie-48LP 開機紫燈不良,"MN / PN: QSA73-OAM-MR-48LP / 91RSPM11.G01 (WIF,交換機,Meraki)
+ATP MO: TN2DNH030297；異常單號: WS2-QCEXCP230516002
+5/5, FQC抽驗Quagga-48LP發現一台上電接外網RI enable 亮黃綠燈後, FQC進行功能性測試時, 按Reset button無法將橘燈切至紅燈(WNC Diag), 出現紫燈不良, 不良率: 3%(1/33)",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+266,H23042,H23042_ 8D report_ CH2 Victor LVR2 IO Cover 印刷异常,"On 5/22, FQC 抽驗時發現9pcs IO Cover全部印刷內容位置偏移（Spec：2.8+/- 0.2mm; Act: 5.3mm） 不良率：28.31%（ 9/32pcs ）
+料號：6B.PLVR2.00103 廠商：Seiyo; DC：2319",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+267,H23044,H23044_8D Report for SAR7-SX1 PCBA由S3移載回S2發生翻覆,PCBA由S3移載回S2時發生翻覆,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+268,H23045,H23045_8D Report for SAR7-SX1 Ethernet LAN訊號無法連線導致FQC測試fail,FQC測站電腦無法ping到DUT導致無法正常啟動，確認現象為Ethernet LAN訊號無法連線。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+269,H23046,H23046_8D Report for SAR7-SX1 IPQC巡檢發現1pcs玻璃凸起超過塑膠tray,IPQC巡檢發現1pcs玻璃凸起超過塑膠tray。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+270,H23047,H23047 8D repot_RAJQ-HCA2_PCBA CHIP拒焊,"1.6/8夜班SMT产线发现RAJQ-HCA2机种55RAJQ12.MG1/MG2 CHIP空焊 F/R:67/770=8.7%
+2.PCB:48RAJQ12.0GA  DC:2321  Vendor:广谦电子",崩邊,chip;chipping;崩裂,邊緣局部破缺或掉角。
+271,H23049,H23049_8D report_August RHLY-AG2 High failure rate,"On 6/13, during production of 91RHLY19.G01, it was detected high failure rate at 3 stations Function test, Final test and Check label with Error code NP0173 (CheckInfo2-boot up failed)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+272,H230506,H230506-8D Report_UMD-RCW05 雷達感測燈號異常20230629,雷達感測燈號異常,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+273,H23053,H23053_QA 8D report UCT-MV5 Thermal test fail,"6/26 FQC抽測3台產品，其中2台thermal test測項fail
+測試規格:0~15，NG測試結果SN FH00007399:22，SN FH00007411:17",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+274,H23054,H23054_8D Report for LV65 ORT1 HASA test NG,在HASA測試 1st 高溫時燈號出現異常 (白燈快速閃爍)。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+275,H23055,H23055_8D Report_SMA_UID-IR2M_FB103損件,"7/6 Board to Board前檢驗Main Board外觀發現FB103損件3pcs
+P1588124-70-I:SBLI23186001433
+P1588124-70-I:SBLI23186001603
+P1588124-70-I:SBLI23187000334",損件,damage;damaged;損壞件;破損,零部件在生產或運輸中受損。
+276,H23056,H23056_8D Report_CM64 ORT NG on throughtput after Power cycling,7/18 ORT test fail，PingDUT異常，不良率 1/3 = 33%,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+277,H23057,"H23057_8D report for R6AQ-MR4,6 外包KS SMT RJ45過爐後塑膠膨脹","KS 反饋SMT reflow後, 發現 RJ45 connector(PN: 21.I1400.005/21.I1400.006) 塑膠膨脹。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+278,H23059,H23059_ 8D report_CH2 Victor LV65C WiFi calibration data 異常20231027,"7/21, DQA found throughput degradation on the 2.4GHz and 5GHz bands of the EPR3 unit. The 2.4GHz band's throughput decreased from 450Mbps to around 200Mbps, while the 5GHz band's throughput decreased from 1.5Gbps to 700Mbps.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+279,H23060,H23060_8D Report for Fortinet AP43 Shielding Cover 白霧現象,"7/21 Customer Onsite Visit S3- ATP line found RVAQ-AP43 shielding cover with white spot on surface ，defect location were randomly
+White spot on surface can’t remove.
+PN : 3S.003JK.111
+Defect rate : 79% (white spot not allow)
+Criteria: Dirty, greasy, white spot on surface not allow.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+280,H23061,H23061_8D report for JVS1 ATP IO Test NG 及 ORT回流OTA站測試fail_20230912,"7/31 JVS1 ATP IO Test有批量性不良(Error symptom: 無法透過USB讀取SN)，經過PE ABA發現異常現象跟著USB件走。
+8/1 JVS1 ORT1測試品回流OTA站及Final站測試，測試NG。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+281,H23062,H23062_8D NW5  RAJB-AB05 方向 RJ45 LED霧面异常,8/11 NQX NW5製造中心I ATP回饋 RAJB-AB05 方向RJ45 LED燈亮度存在色差(正常品：亮面，異常品：霧面）,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+282,H23063,H23063_8D Report for OS6360-P24X CPLD IC GOWIN boot up Fail,"ATP 投入28pcs, 發現2pcs function測試異常, 不良現象為無法開機。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+283,H23064,H23064_8D Report for RTOS-AR1 Camera Module defocus,客戶反映Camera Module 有defocus問題。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+284,H23066,H23066_ 8D Report---CH2 Victor LV65C USB type C test Fail,"On 8/22, FQC OTA站发现LV65C*2pcs USB Type C test fail and FQC Function站发现LV65C*1pc USB Type C test fail. 
+F/R：9.4% ( 3/32 )",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+285,H23067,H23067_ Report Oasis 14 LW(ELA7-C02&DC33002RS0L)天線爬牆issue_5C Report_NQJ-QCEXCP230825003,"8/22 Dell反饋 Oasis 14 LW Speaker天線的 Cable走線有爬牆現象.
+WNC Model:ELA7-C02
+PN:DC33002RS0L/81ELA715.G38
+&【OASIS 14, LW LTE MAIN + AUX(5G)/SPK】",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+286,H23069,H23069_8D Report_ RXRA-HC74-海尔集团出现5G信号弱问题,2023/8/18 H3C RD反馈RXRA-HC74 产品在海尔集团出现批量5G信号弱问题，经H3C RD分析为Qorvo 4588 FEM烧。器件PN：74.K4588.000 厂商：Qorvo。 市场反馈不良率F/R:22/1056=2.1%,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+287,H230704,H230704_8D Report_AMA_UMD-RN03_Screw hole cracked after customer screwing,OEM鎖附後產品螺絲孔出現裂痕，Astemo發現該產品的Metal Ring被塑件溢膠覆蓋,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+288,H23070,H23070_8D Report NW2_RXAQ-MR2_PCB L2&L3與L4&L5疊反,線路訊號異常問題，導致功能測試fail,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+289,H23072,H23072 QA 8D Report Patrick JKP15 Shield frame is fell out,"9/14, PD inspected before inputting PCBA to ATP line and found the shield frame (SH1) is fell out (20/8118 ~ 0.25%).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+290,H23073,H23073_8D Report--- CH2 Victor LVR2 未升级客户FW,"On 9/30, FQC UI测试站发现LVR2*1pc 未升级客户FW, F/R：3.1% ( 1/32 )",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+291,H23074,H23074_8D report for LV65 ORT1 Low Temperature Test NG 1016,"ORT1 Low Temperature Test NG，在Low Temperature test -20℃ dwell 1hr後，DUT Running ≦ 6mins燈號未亮。
+回常溫後燈號及功能檢查正常(OTA 1 & OTA2 & Function)。",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+292,H23075,H23075_ 8D report_ CH2 Victor LV65C LTE Fail,"9/28, FQC OTA 站发现LV65C* 1pc LTE ant6 RSSI fail （Spec：-50~-70dB；实际：-78dB） 經PE、ME、QA拆機確認發現天线 I-PEX 
+头变形，导致扣合不到位（如右图）
+9/30, FQC OTA 站发现LV65C* 1pc LTE ant6 RSSI fail （Spec：-50~-70dB；实际：-75.8dB） 經PE、ME、QA拆機量测確認發現天线 short
+ 產線OTA站治具沒100%卡關，風險不可評估，暫時hold shipment處理",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+293,H23076,H23076_8D report for SAQ4-D1 ORT test後回流Throughput站fail_20231113,"10/13 SAQF-D1進行ORT低溫測試 回流至ATP Throughput Test測試NG (MO: TN2DNH090392；P/N: 81SAQ408.G20；SN: WC234000027143；Error symptom: Ping DUT fail)
+低溫儲存的ORT測試項目抽測3 pcs，有1 pc NG (FR: 33%；1/3)；測試方法：-20℃儲存24 hrs  於Chamber回溫  回流測站測試",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+294,H23077,H23077_8D report for RTOS-AR1 Camera module 重工回流之DUT氣密測試Fail,Camera module 重工回流之DUT氣密測試Fail,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+295,H23079,H23079_8D report for J7A-U ORT2 Single Drop Test NG,ORT2抽測落摔測試2pcs，其中1pc 有搖晃異音。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+296,H230804,H230804_8D Report_AMA_UMC-RDTCEU_PCBA 背板壓傷,"8/18 日班產線於AVI 站發現PN #91UMCRTDEM.G03AG (MO #TN1ANH080087) 批量性PCBA背板壓傷，不良率為9.28% (=557/6,000 pcs)",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+297,H23081,H23081_Henna 反應UMM-IBTD2 Intel SOC異常,"2023/11/8客戶通知客供 SoC (71.18295.032CJVAG, 71.18295.035CJVAG, 71.18295.036CJVAG) 異常，於 2023/11/08 正式要求 WNC 進行 Hold Shipment，並協助 Sorting 出已使用風險 SoC Lot 的 Module 。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+298,H23082,H23082_Hold Shipment_SMA_2nd optic脫落_20231225,11/8 夜班在成品 & WIPTina_UID-IR2M_60階PCBA與成品上2nd Optic脫落，至11/9 累計共10pc,脫落,peel;peeling;剝落;掉落,產品表面塗層、黏貼物或零件由本體剝離或掉落。
+299,H23085,H23085_8D report_QSB11-OAQ-ER ORT fail,11/16 QSB11-OAQ-ER進行1-1 ORT測試，運行17小時後，閃爍燈號消失、再無動作,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+300,H23087,H23087 NW3 MT RGEM-MTK3 21.I9182.001 RJ45 网口里面熔化变形,"11/21 SMT FQC抽检55RGEMK3.0G6发现J600, J601, J602的RJ45熔化变形不良高33% (4/12pcs)，
+同时ATP产线人员也发现2pcs J600&J601熔化变形不良，材料耐温spec不符合WNC炉温spec (客人designed 和客人指定厂商)
+Material P/N: 21.I9182.001, 耐温: 240~250°C, DIP的波峰焊温度: 250~270°C
+厂商： Dragonwell （China）",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+301,H23090,H23090_8D report_QSB11_OAQ_ER BI不良率0.039,"1. 11/20 產品BI log check站的不良率3.9%，不良現象為Run-in cycle數不完全，經RD分析後為2nd source的DDR (P/N: 72.10586.012) 所致 (MO: TN2DEH100083；P/N: 81QSB111.G06)
+2. 12/1及12/13 QE lab通知ORT fail，不良現象為Running cycle數不完全，經查詢該2 pcs為2nd source的DDR (P/N: 72.10586.012)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+302,H23091,H23091 8D Report NW2_RXAQ-MR3 ADT實配測試DUT不亮燈 issue,FQC performed the ADT real-match test and randomly inspected the DUT and found that 3pcs did not light up or were powered off after light turned on.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+303,H23092,H23092_8D report for SCST1-SX2_U9 transformer外觀Crack,U9 (76.1S749.008KX) transformer外觀Crack,裂痕,crack;cracks;裂紋;裂縫,材料出現裂縫或斷裂徵兆。
+304,H24001,H24001_8D_SAR7-SX1_RF function fail due to customer FW issue,RF function fail due to customer FW issue_x000B_客戶通知立即切回舊版FW 生產(新2023.51.0.mr29388 舊 2023.19.0.mr23980)。,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+305,H24002,H24002_8D report for_DNSK-P20 BT Init fail_20240130,"1.FQC 抽驗DNSK-P20,BT Init fail：
+1/26FQC 抽验DNSK-P20发现Check [BT lNIT Success] Fail1/80=1.25%; MAC:8C53E679019B
+1/28FQC 抽验DNSK-P20发现Check [BT lNIT Success] Fail1/80=1.25%;MAC 8C53E67CB1C7.
+2.PE observed
+PE Henry Yang使用FQC環境，手動下Command確認，不良現象同FQC Test為BT Init fail.確認為產品不良。
+",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+306,H24003,H24003_8D_XRBD-3 電池電量不足,"1/15客戶/Zuni陸續反饋XRBD-3 產品在終端用戶使用發現電池電量僅使用6個月左右就消耗完畢
+(正常電池電量應可使用4年),目前客戶初步分析為產品FW issue(CID)造成，1/30與客戶會議決議
+要求WNC暫停該產品生產與出貨，待客戶進一步確認通知。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+307,H24004,H24004_8D_RXRB-MIB_JNPR Rev did not comply with ECO-58044,"WNC was following JNPR DEV Notice to apply Gasket solution to Rev. AB production since 2023/9/26 in prior to JNPR ECO release to upgrade Rev. to AC for the changing. 2024/2/5, 1st lot of AP45E-WW (RXRB-MIB, G12) was produced in Rev.AB with Gasket and submit FAI report for review but got FAIL result due to ECO-58044 for Rev. AC has been activated since 2023/11/22.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+308,H24005,H24005_8D_ RXEQ-MTK2_ NW3 MT POE cable led don’t light,"On 02/17, FQC inspected model RXEQ-MT2, detected 2 pcs POE cable led don’t light once test DUT. Rate 2NG/ 6 pcs finish good.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+309,H24006,H24006_ 8D report_CH1 Andy LS06 LCM green and the flickering screen,"2/17 FQC sampling found out 1pc LS06 LCM green screen. At the same time 1/29 - 2/21 LS06 
+production line found that the LCM had green screen and the flickering screen rate increased.
+ PE and RD confirmed that there is a problem with the CPU driver. Due to assess the risk of impact 
+on customer use, hold shipment is carried out
+ F/R：3.5% (104/2934pcs)
+ Part No: 71.16401.000; Supplier: Synaptics; DC: 2349",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+310,H24007,H24007_8D _RGEM-MTK10_ NW3 MT Heatsink come apart once shaking,"On 03/09, FQC inspected model RGEM-MTK10/ 91RGEMKA.GA7 detected 4 pcs Heatsink was came apart once shaking defect rate: 22.2 % (4 NG/18 pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+311,H24008,H24008_8D_QSA81-OAM-AL-P48X_field side PoE function failures,Field side PoE function failures.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+312,H24009,H24009_8D_UMC-515CAN_Wrong Cover Marking,,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+313,H24010,H24010_8D report_ LV6C ORT Drop Fail NG,"4/8, QE确认LVR2 自动线（H205-PK），抽測ORT2 drop 1台NG
+不良率：1 / 3 (33.3%)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+314,H24011,H24011_8D_UID-IR2_Main Board 2nd optic drop,2024/4/08起S1生產Tina Camera Model:UID-IR2 PN:81UIDIR2TO.G03KJXAG Line:A356手動線組裝過程發生Main Board 2nd Optic脫落，不良率0.33%(20/6000)。經ME分析2nd Optic掉落為Main Board沾黏處不吃膠，確認生產Main Board為NQJ打件95UIDIR2TN.G01JXAG,脫落,peel;peeling;剝落;掉落,產品表面塗層、黏貼物或零件由本體剝離或掉落。
+315,H24012,H24012_8D_FD4-R1_ORT2 Leakage Test Failed,ORT2 Leakage後不過電,漏電,leakage;漏電,不正常的電流外洩至地或外殼。
+316,H24013,H24013_8D_UMC-STD31BPE_SOC U1001 HIP,"2024/4/22 ATP測試發現GPIO NG，ATP FA分析HIP異常，不良率=0.4%(17/4147)
+U1001 for CTP3: 71.62731.002AG71.12731.001AG (D/C: 2349)
+U1001 for PACCAR: 71.12731.001AG (D/C: 2350)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+317,H24014,H24014_8D_LV65_ORT2 Drop Test 後 OTA1 test Fail,ORT2 Drop Test 後 OTA1 test Fail,測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+318,H24015,H24015_ 8D report_CH1 Cary LCS7 BIP Errors Fail due to BOSA Assembly Issue,"On 5/4 & 5/6 VN LCS7 model, FQC Final station, FQC sampling test to detect 3pcs LCS7 get BIP Errors Fail due to BOSA wire assembly issue, then conduct sorting 1200pcs to detect more 25pcs the same issue. F/R：FQC 3/64~4,69%, Production line 25/1200~2,08%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+319,H24016,H24016_8D_UCT-MV2M_GPS performance degression,"3/27客人反饋產品GPS的 performance不理想
+並提供了產品的安裝日期和每月監控產品在performance表現上的結果
+1年共下降-7dB，2年共下降-10dB",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+320,H24017,H24017 8D NQX NW3 RHAM-AG4 FQC辰陽電源板不通電問題,5/7 KS製造中心Ⅰ（NW3）FQC反饋RHAM-AG4辰陽電源板無輸出1pcs，RHAM-AG4[August WIFI CONNECT],未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+321,H24018,H24018 LMG1 LT Adaptor no power output issue,5/13 [CH] [Customer : BT] [LMG1] [Lucent Trans] [Adaptor] 无电源输出1pcs ,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+322,H24019,H24019_8D_JVG2 PCB 拒焊_重複鍍NiAu導致Ni層氧化_,PCB delamination,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+323,H24020,H24020_8D_UID-IR2_HotBar後損件,2024/6/04 夜班生產UID-IR2 Main Board 60UIDIR2TN.G01JXAG 在HotBar Soldering 後有零件損件，不良0.25%(10/4000)。不良集中在使用新導入載盤#8 HotBat設備機台，新載盤為改善良率5/29導入，目前使用在#6 &#8 HotBar設備機台中。ME/PD/自動化維護線上確認新載盤在取放板時有機會干涉撞擊底部側牆導致損件，目前損件位置與PE確認為ESD保護電路。若有損件問題廠內功能測試無法攔下，出貨可造成產品無ESD保護影響,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+324,H24022,H24022_8D_LV65C_CH2 Victor LV65C injection stress mark on housing,"On 5/22, Verizon feedback some Titan3 with injection stress mark on cover, total 51pcs.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+325,H24023,H24023_8D_VMM-Q8295_U3 PMIC BGA Short,Customer reported 1 pc VMM-Q8295 (CP90-20107-23) PMIC solder ball bridge.,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+326,H24024,H24024_8D_QSA93-OAM-MR-8FP_QC found the system LED white light displays abnormal,QC found the system LED white light displays abnormal,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+327,H24025,H24025_8D_LV65C_CH2 Victor LV65C ORT Drop Fail NG,"On 7/20 , LV65C performed ORT2 Drop test (Height: 75cm, Impact surface: hardwood, 5 points, 1 cycle) with customer and found the abnormal noise and No power Disassembly the device and found that main holder rib was fallen down and B2B connector was crack.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+328,H24026,H24026_8D_LVR2_CH2 Victor LVR2 ORT Drop Fail NG,"7/24, After LVR2 model proceed ORT2 Drop test (Height: 75cm, Impact surface: hardwood, 6 face+4 corner, 1 cycle), which found 3pc with abnormal noise, F/R 75%(3/4).
+Disassembly the device and found that The screws fell off at the link housing and holder* 2pcs and The rib of the mid cover was fallen down*1pc",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+329,H24027,H24027_8D_VMM-Q8155_SoC 異常客戶要求停止出貨,客戶通知客供 U1000 SoC (71.18155.013CJVAG) 異常，於 2024/7/25 要求 WNC 進行 Hold Shipment，並要求協助禁用 D/C>2425 與揀選已使用 SoC 的 Module。,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+330,H24028,H24028_8D report for SAR8-SX1 Void soldering NG,"7/30, NW1 Wifi3 (SAR8-SX1) SMT production MO: NN1DNJ070020 check X-Ray detected 2.2%(11/500pcs) void soldering NG, preliminary analysis is caused by PAD dimension of PCB NG.
+Supplier: MEIKO; Material P/N: 48SAR801.0GAMEI (Date code: 2421, 2422, 2423)",虛焊,void;voids;虛焊,焊點內部存在空洞或連接不良。
+331,H24029,H24029_8D_LCS7-CH1_BOSA shielding cover dimension tolerance issue,"7/31 VN LCS7X model, QE informed EQT result FAIL (1/3pcs drop test FAIL) due to BOSA shielding cover drop out,  and production line also detect this shielding cover can’t be good assembled due to component dimension tolerance issue.  Defect Rate： 31/250~12.4%",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+332,H24030,H24030_8D_JS6W_CH1 DENNY JS6W ORT 2 Drop Test Fail,"8/1, After JS6W model proceed ORT2 Drop test (Height: 75cm, Impact surface: hardwood,  6 faces+2 corners+ 2 edges , 1 cycle), which found
+ 1pc with DIGITAL AUDIO connector draw-in, and found the connector fell off after the disassembly, F/R:50%(1/2).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+333,H24031,H24031_8D_UMD-RN03_PCB爆板,"7, Aug.,2024 WNC SMT VI found that PCBA delamination, PCB PN is 48.UMDRN03.0GAKOMAG , vendor is Compeq；After did sorting for MO TN1ANJ070912, the delamination D/C are DC 2418 for 2 pcs and DC 2426 for 49 pcs.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+334,H24032,H24032_8D_RIRM-BS2 NW3 Breit Lacking thermal glue on PCBA,"On 8/21, When PD&PE analyzed the NG units, detected 1pcs of Breit RIMR-BS2 circuit board lacking glue on SOC IC surface with high fail rate, then sorting 100pcs detected 15% (15NG/100pcs) with the same defect symptom",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+335,H24033,H24033_8D_JKP15 The SH1 (shielding frame) was drop after assembly,8/22 号WNC ATP产线反馈3S.004RT.11101 shielding 空焊比率26/450（5.78% DC 2426）,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+336,H24035,H24035_8D_SAR8-SX1_NW1 Sloan_Lack of gore vent,"SpaceX found 397 pcs 少
+Material PN : 34.4SAR8.002",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+337,H24036,H24036_8D_UCT-BBB_Resistor cracking issue at location AR31,"From 9/30 to 10/01, Sensor board function test station of model UCT-BBB happened failure symptom Audio_Self fail with fail rate 1%(6/600). ATP PE found out that the cause of the failure was related to component cracking at location AR31 of sensor board Bottom surface.",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+338,H24037,H24037_8D_RESN-CH50_Wifi connect fail,"Chuck reported that end user (Xcel Energy) takes 30 min pressing retry unit (S/N: 2425C2000499) it is able to find Wi-Fi network. Other devices are able to connect to the Wi-Fi (phone, laptop).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+339,H24038,H24038_8D_LV65C_CH2 Victor LV65C ORT2 drop test fail,"10/9 确认LV65C 自动线（H205）抽測ORT2 Drop时，发现1台drop final Eth Speed Function NG
+不良率：1 / 2 (50%)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+340,H24039,H24039_8D_SAR8-SX1_NW1 Sloan U1 HIP Issue,"On 10/10 and 11/22, ATP PE detected 14pcs and 16pcs consecutively on Wi-Fi Gen3 function test station, SMT took to X-ray and found U1 had HIP (head-in-pillow) issue.
+.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+341,H24040,H24040_8D_UMC-IC31 After ORT function test fail,"2024/10/15 執行低溫儲存測試(-40°C/ 24hours)後，執行Radiation功能測試站發生, LTE test Fail Failure rate:1/4=25%。sampling size : 8 pcs(4 pcs 高溫/4 pcs 低溫)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+342,H24041,H24041_8D_JS7E_CH2 Victor JS7E thermal shock test fail,"10/26, After JS7E proceed ORT2 Aging Under Extreme Temperature test (Temperature range:-20~70 ℃; High/ low temperature dwell time: 30mins; Transfer time : < 5 min; Number of cycles: 100 cycles), which found 1pc with HDD function invalidation. F/R: 1/4 (25%)
+Vendor: Western ; D/C: 2436",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+343,H24042,H24042_8D_LVR2_CH2 VICTOR LVR2 ORT 2 Drop Test Fail,"10/26, After LVR2 proceed ORT2 Drop test (Height: 75cm, Impact surface: hardwood, 6 face+4 corner, 1 cycle), which found 1pc housing weld line crack at the 2nd drop（Corner4）.F/R: 1/2 (50%)
+Vendor：Seiyo / P/N：6B.PLVR2.00A01 / Mold: 2-1/ Injection date：2024/09/11",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+344,H24043,H24043_8D_Crystal REAQ-C1 Missing the removal label,"On 12/2, BOM and actual product had an 1 non-used material (PN: 34.GR7AQ.010FD5). Then PME confirmed with PM that production had missing 1 remove label on the DUT.
+How many: 7128 pcs, F/R: 100%",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+345,H24044,H24044_8D_SAR8-SX1_NW1 Sloan U1 HIP Issue,"On 10/10 and 11/22, ATP PE detected 14pcs and 16pcs consecutively on Wi-Fi Gen3 function test station, SMT took to X-ray and found U1 had HIP (head-in-pillow) issue.
+.",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+346,H24045,H24045_8D_ELBA-Q2_X8V(81ELBA15.G17) antenna test fail_241207,"11/26 廣達(重慶)反饋ELBA-Q2/81ELBA15.G17
+[400&600 G11_OLAF 440,THICK, LDS ANTENNA,
+WWAN COMBO] antenna test fail,
+不良率:18%(36/200)，
+不良D/C: 20240904，",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+347,H24046,"H24046_8D_SAR8-SX1_NW1 Sloan_ NG L3, L5, T1, T2, T3, C60 Split out of PCBAs V1","On 12/02, ATP PE found 62 damaged/split components in Lines 1, 2, and 5 (FR: 0.49%). On 12/14, they found 16 damaged T1, T2, and T3 components across all 5 lines (FR: 0.11%). On 12/16, they found 27 damaged/split components in Lines 2, 4, and 5 (FR: 0.19%). On 12/19, they found 24 damaged components in Lines 2, 4, and 5 (FR: 0.19%).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+348,H24047,H24047_8D report_SMA_UCT-MVV3_Inward lens drop,"2024/12/13 產線生產組裝作業時,發生Inward 鏡頭掉落*1pcs
+不良率0.91%(1/109)",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+349,A220702,[A220702] 8D report _JS7K FCC label and Box mismatch issue,"7/16, CTDI(Denny 3rd Party)反馈JS7K 1st NPT pallet inspection result: 2pcs JS7K FCC label与Box label mis-match（SN:X71VH2HL003608, X71VH2HL003706）, 且在同一carton，不良率 1% (2/200pcs)",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+350,A220704,[A220704] 8D Report  BEAM 57SAQB12.G01_Used wrong LAN port J57,"22/07/26 下午4:00 点,在ATP-W118线VI站OP检货时发现3pcsLAN ports (J57)外观异常，
+功能未影响 (H1). PCBA上已用错物料
+OK component: 21.I1022.054
+NG component: 21.I1022.085
+ATP defect rate : 0.6% (3/500pcs)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+351,H220605,[H220605] Justin客户反馈市场上有4台产品出现面板翘起现象，不良品生产日期：2022322(DC2212)8D Report,7/8 Justin客户反馈市场RAWQ-JD11機種有4台产品出现面板翘起现象，不良品生产日期：2022322(DC2212),未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+352,H22078,[H22078] Hold shipment Alabama RVAQ-52I 发生console port 脱落 (重复发生）,"W202-PK line, during the production of 81RVAQ03.GK9 model, it was found Micro USB fell off (J22 parts).",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+353,A220402,【A220402】8D report_ LVR2 heatsink 螺丝锁附不到位20220520,"4/26， LVR2 H201 自动螺丝机验证力基Heatsink（3D.0008A.111）品质异常sorting 后材料，PD发现批量锁螺丝不到位。不良站别及不良率如下：
+1. 锁Heatsink：F/R=67/538=12.45%
+2. 锁散热片A：F/R=130/538=22.3%
+3. 锁散热片B：F/R=33/538=5.66%
+",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+354,A22048,【A22048】JGE1-CA 雷雕錯誤 (1panel 4小板有2小板序號重複)_20220928,"Issue Date : 2022/09/02
+MN / PN : JGE1-CA/55.JGE14.M01
+雷雕序號重複 (1panel :4小板有2小板序號重複)正確A.B.C.D，錯誤A.A.B.B
+該工單(TN2COG080013)數量：5400
+人員錯誤勾選程式為兩小板程式相同",錯誤,error;mistake,人為或流程造成之操作/設定/記錄或判讀不正確。
+355,A220503,【A220503】8D LVR2亮度異常 Version 1,"5/21,LVR2 Final测试站发生批量性Power LED亮度异常。经厂商测量机壳的透光率異常Spec 550nm 3%+/1.5 實際 0.65%-0.92%。",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+356,A220601,【A220601】8D report_ LVP2机壳Menu Button无弹性,"6/24夜班, 在Online FCC站OP检查LVP2机壳时发生62pc 机壳Menu Button无弹性（F/R：62/800 =7.75%）。
+料号：6B.PLVP2.00J
+DC:2224
+厂商：Dragon",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+357,A220701,【A220701】8D report_ JS7K Box Label的UPC字体与SIP定义不一致,"7/7 N, JS7K 新料号变更时（81阶91阶），FQC进行产品FAI时发现Box label UPC-字体与SIP定义不一致
+影响数量：JS7K机种产能为3354pcs/班。FQC需在2个小时内需完成FAI，造成939pcs异常品",未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
+358,A220903,【A220903】8D report_LVD1 USB测试不稳定,"9/16, LVD1 FQC Function站抽验发现5pcs units USB测试不稳定, 不良率：5/20=25%，经ME、ATP/SMT PE &QA拆机确认USB接口两端GND PIN 均有断裂
+SMT工單號: NN1CNG080062",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+359,H22069,"【H22069】 3D report_BEAM-SAQB-L1,SAQA-L2_NG RoHS testing issue","On 10/19 WNC got official information test result from SGS that the sample form supplier Nien-Yi Cable is RoHS item test FAIL with DEHP = 1442PPM
+Spec: <1000ppm
+Actual : 1442ppm
+PN : 50.3SAQ4.002 DC: 2240
+Rate: 1/1( 100%)",測試異常,fail;ng;test fail;測試ng,測試過程或結果顯示功能不符合預期（如 NG、fail）。
+360,H220804,【H220804】8D report_ LVR2上盖卡勾断裂,"8/16, 5:00am~9:00am, LVR2 Online FCC1站 (Line: H202) 发现组完上盖的产品摇晃异音,拆机分析确认组上盖/
+Housing发生上盖卡勾断裂,不良率: 27/694=3.89%.
+上盖料号: 3P.001JA.111 (模号: 2-1, 2-2), Supplier: 龙生; D/C: 0721(实际生产日期).",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+361,H220902,【H220902】8D report_LVD1 Master Ver错误,"9/21夜班, 在LVD1 FQC Function 站，FQC抽验发现1pc Master Ver 错误（Spec：0.5.6.204，实际错误ver：0.0.0.0）。不良率：1/32=3.1%",不良率,fail率;ng率,在特定檢驗區間內，判定為不合格的品數占總檢驗品數之比例。
+362,H221203,【H221203】1207 製造中心Ⅱ（NW3）PM反饋 EABX-MU1  WIFI 芯片Can't detect card,12/07 製造中心Ⅱ（NW2）PM反饋 EABX-MU1 富威(REALTEK) WIFI 芯片 疑似不良 issue 6pcs，不良现象 Can't detect card，需Hold材料、半成品&成品,未分類,,尚未能從描述中自動判定之問題類別；待人工補分類。
