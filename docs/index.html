@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D2 Controlled Vocabulary — 驗證與編輯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    :root{--bg:#0f172a;--panel:#111827;--muted:#334155;--text:#e5e7eb;--accent:#22d3ee;--accent2:#a855f7;--ok:#22c55e;--warn:#f59e0b;--danger:#ef4444}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(120deg,#0b1220,#0f172a 60%,#0b1220);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",sans-serif}
+    .wrap{max-width:1100px;margin:40px auto;padding:0 16px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:16px}
+    h1{font-size:20px;letter-spacing:.2px;margin:0;font-weight:600}
+    .card{background:rgba(17,24,39,.65);backdrop-filter:saturate(120%) blur(6px);border:1px solid rgba(255,255,255,.06);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .section{padding:16px 18px}
+    .row{display:grid;grid-template-columns:160px 1fr;gap:10px;align-items:center;margin:10px 0}
+    label{font-size:12px;color:#cbd5e1;opacity:.9}
+    input[type="text"], textarea, select{width:100%;background:#0b1220;border:1px solid #263142;color:var(--text);border-radius:10px;padding:10px 12px;font-size:14px;outline:none;transition:.2s}
+    input[type="text"]:focus, textarea:focus, select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(34,211,238,.15)}
+    textarea{min-height:88px;resize:vertical}
+    .controls{display:flex;flex-wrap:wrap;gap:10px}
+    button{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b1220;border:none;border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer;transition:transform .05s ease;box-shadow:0 10px 18px rgba(168,85,247,.25)}
+    button:active{transform:translateY(1px)}
+    .btn-ghost{background:#0b1220;color:#cbd5e1;border:1px solid #263142;box-shadow:none}
+    .btn-ok{background:linear-gradient(135deg,#34d399,#22c55e)}
+    .btn-warn{background:linear-gradient(135deg,#fbbf24,#f59e0b)}
+    .btn-danger{background:linear-gradient(135deg,#f87171,#ef4444)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+    .muted{color:#94a3b8;font-size:12px}
+    .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;border:1px solid #263142;background:#0b1220;color:#cbd5e1;font-size:12px}
+    .kbd{border:1px solid #334155;border-bottom-width:2px;border-radius:6px;padding:1px 6px;background:#0b1220;color:#e2e8f0}
+    .progress{height:8px;background:#0b1220;border:1px solid #263142;border-radius:999px;overflow:hidden}
+    .progress>span{display:block;height:100%;background:linear-gradient(90deg,#22d3ee,#a855f7)}
+    footer{margin-top:16px;font-size:12px;color:#94a3b8}
+    .sp{height:8px}
+    /* Spinner overlay */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:9999}
+    .overlay.show{display:flex}
+    .spinner{width:64px;height:64px;border-radius:50%;border:6px solid rgba(255,255,255,.2);border-top-color:#22d3ee;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .warn{color:#fcd34d}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>D2 Controlled Vocabulary — 驗證與編輯</h1>
+      <div class="controls">
+        <input type="file" id="file" accept=".csv" />
+        <button class="btn-ghost" id="btnExport" disabled>匯出編輯後的CSV</button>
+        <button class="btn-ghost" id="btnExportMap" disabled title="匯出 Controlled Vocabulary Table">匯出 Controlled Vocabulary Table</button>
+      </div>
+    </header>
+
+    <div class="card section" id="summaryCard" style="display:none">
+      <div class="grid-2">
+        <div>
+          <div class="muted">目前資料筆數 / 當前索引</div>
+          <div style="margin-top:4px"><span id="count">0</span> 筆，<span id="idx">0</span> / <span id="last">0</span></div>
+        </div>
+        <div>
+          <div class="muted">已填寫 Preferred Term 比例</div>
+          <div class="progress" style="margin-top:6px"><span id="hitbar" style="width:0%"></span></div>
+          <div class="muted" style="margin-top:6px"><span id="hits">0</span> 已填 / <span id="miss">0</span> 未填</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sp"></div>
+
+    <div class="card section" id="navCard" style="display:none">
+      <div class="controls">
+        <button id="prev" class="btn-ghost">↑ 上一筆</button>
+        <button id="next">下一筆 ↓</button>
+        <input id="jump" type="text" placeholder="跳至 Row_ID 或索引 (Enter)" style="max-width:220px" />
+        <span class="pill">快捷鍵：<span class="kbd">↑</span>/<span class="kbd">↓</span>、<span class="kbd">Ctrl</span> + <span class="kbd">S</span> 儲存</span>
+      </div>
+    </div>
+
+    <div class="sp"></div>
+
+    <div class="card" id="workCard" style="display:none">
+
+      <!-- 基本資訊 -->
+      <div class="section">
+        <div class="row"><label>Row_ID</label><div id="Row_ID" class="muted"></div></div>
+        <div class="row"><label>ISSUE NO.</label><div id="IssueNo" class="muted"></div></div>
+        <div class="row"><label>File Name</label><div id="FileName" class="muted"></div></div>
+        <div class="row"><label>Original Description</label><div id="Original" class="muted"></div></div>
+      </div>
+
+      <hr style="border-color:#0b1220;border-top:1px solid #263142" />
+
+      <!-- 快速選擇 Preferred -->
+      <div class="section" id="quickBox">
+        <div class="row"><label>快速選擇 Preferred</label>
+          <div>
+            <p><small>填寫方式： 
+              <br> 1. 直接利用下拉式選單選取現有的 Perferred Term 
+              <br> 2. 新增 Perferred Term: 請先輸入欲新增的 Perferred Term 並點選 "新增" 按鈕後，再編輯Alternative Terms 與 Definition
+            </small></p>
+            
+            <div class="grid-3">
+              <select id="pickPref">
+                <option value="">— 從現有 Preferred 選擇 —</option>
+              </select>
+              <input id="newPref" type="text" placeholder="新增 Preferred Term（按下右邊新增按鈕）" />
+              <button class="btn btn-outline-primary" id="btnAddPref">新增</button>
+            </div>
+            <div class="grid-2" style="margin-top:10px">
+              <div>
+                <label class="muted">Alternative（可編輯）</label>
+                <input id="quickAlt" type="text" placeholder="請先新增Preferred Term再編輯此欄位" />
+              </div>
+              <div>
+                <label class="muted">Definition（可編輯）</label>
+                <input id="quickDef" type="text" placeholder="必填：請先輸入 Definition 才能填入下方欄位。" />
+              </div>
+            </div>
+            <div class="controls" style="margin-top:10px">
+              <button class="btn-ok" id="btnQuickFill" disabled>填至下方欄位</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border-color:#0b1220;border-top:1px solid #263142" />
+
+      <!-- 主要可編輯欄位 -->
+      <div class="section">
+        <div class="row"><label>Preferred Term</label>
+          <div>
+            <input id="Preferred" type="text" list="dlPref" placeholder="輸入或選擇 Preferred Term" />
+            <datalist id="dlPref"></datalist>
+          </div>
+        </div>
+        <div class="row"><label>Alternative Terms</label><input id="Alt" type="text" placeholder="以 ; 分隔" /></div>
+        <div class="row"><label>Definition</label><textarea id="Def" placeholder="請輸入定義…"></textarea></div>
+      </div>
+
+      <div class="section">
+        <div class="controls">
+          <button id="save" class="btn-ok">儲存當前 (Ctrl+S)</button>
+          <button id="saveNext" class="btn-warn">儲存並下一筆</button>
+          <button id="reset" class="btn-ghost">還原當前</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      CSV 欄位為：Row_ID, ISSUE NO., File Name, Original Description, Preferred Term, Alternative Terms, Definition
+    </footer>
+  </div>
+
+  <!-- Spinner Overlay -->
+  <div class="overlay" id="overlay">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+      <div class="spinner"></div>
+      <div class="muted">讀取中，請稍候…</div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const $ = (id)=>document.getElementById(id);
+  const overlay = $('overlay');
+
+  const fileInput = $('file');
+  const btnExport = $('btnExport');
+  const btnExportMap = $('btnExportMap');
+  const countEl = $('count');
+  const idxEl = $('idx');
+  const lastEl = $('last');
+  const hitbar = $('hitbar');
+  const hitsEl = $('hits');
+  const missEl = $('miss');
+
+  const prevBtn = $('prev');
+  const nextBtn = $('next');
+  const jumpInp = $('jump');
+
+  const rowId = $('Row_ID');
+  const issueNo = $('IssueNo');
+  const fileName = $('FileName');
+  const original = $('Original');
+
+  const pref = $('Preferred');
+  const alt = $('Alt');
+  const def = $('Def');
+  const dlPref = $('dlPref');
+
+  // Quick section
+  const pickPref = $('pickPref');
+  const newPref = $('newPref');
+  const btnAddPref = $('btnAddPref');
+  const quickAlt = $('quickAlt');
+  const quickDef = $('quickDef');
+  const btnQuickFill = $('btnQuickFill');
+  const defWarn = $('defWarn');
+
+  const saveBtn = $('save');
+  const saveNextBtn = $('saveNext');
+  const resetBtn = $('reset');
+
+  const summaryCard = $('summaryCard');
+  const navCard = $('navCard');
+  const workCard = $('workCard');
+
+  let data = [];
+  let fields = [];
+  let idx = 0;
+  let snapshot = null; // for reset
+
+  // Preferred 候選與記憶
+  let prefOptions = new Set();
+  // Preferred→Alternative（Set）
+  let pref2alt = {};
+  // Preferred→Definition（string）
+  let pref2def = {};
+  const LS_ALT = 'd2_pref2alt_v2';
+  const LS_DEF = 'd2_pref2def_v2';
+
+  const REQUIRED_FIELDS = [
+    'Row_ID','ISSUE NO.','File Name','Original Description',
+    'Preferred Term','Alternative Terms','Definition'
+  ];
+
+  function showSpinner(){ overlay.classList.add('show'); }
+  function hideSpinner(){ overlay.classList.remove('show'); }
+
+  function loadPrefMemory(){
+    try{
+      const rawA = localStorage.getItem(LS_ALT);
+      const rawD = localStorage.getItem(LS_DEF);
+      pref2alt = rawA ? Object.fromEntries(Object.entries(JSON.parse(rawA)).map(([k,v])=>[k,new Set(v)])) : {};
+      pref2def = rawD ? JSON.parse(rawD) : {};
+    }catch(e){
+      pref2alt = {}; pref2def = {};
+    }
+  }
+  function savePrefMemory(){
+    const serialA = {};
+    for(const k in pref2alt){ serialA[k] = Array.from(pref2alt[k]); }
+    localStorage.setItem(LS_ALT, JSON.stringify(serialA));
+    localStorage.setItem(LS_DEF, JSON.stringify(pref2def));
+  }
+
+  function seedMemoryFromData(){
+    data.forEach(r=>{
+      const p = (r['Preferred Term']||'').trim();
+      const a = (r['Alternative Terms']||'').trim();
+      const d = (r['Definition']||'').trim();
+      if(!p) return;
+      if(!pref2alt[p]) pref2alt[p] = new Set();
+      a.split(/;|,|\n/).map(s=>s.trim()).filter(Boolean).forEach(v=>pref2alt[p].add(v));
+      if(d && !pref2def[p]) pref2def[p] = d;
+    });
+    savePrefMemory();
+  }
+
+  function recalcOptions(){
+    prefOptions = new Set(data.map(r => (r['Preferred Term']||'').trim()).filter(Boolean));
+    rebuildSelect(pickPref, Array.from(prefOptions).sort());
+    rebuildDatalist(dlPref, Array.from(prefOptions).sort());
+  }
+
+  function rebuildSelect(sel, arr){
+    const keep = sel.value;
+    sel.innerHTML = `<option value="">— 從現有 Preferred 選擇 —</option>` + arr.map(v=>`<option>${escapeHtml(v)}</option>`).join('');
+    if(arr.includes(keep)) sel.value = keep;
+  }
+  function rebuildDatalist(dl, arr){
+    const frag = document.createDocumentFragment();
+    dl.innerHTML = '';
+    arr.forEach(v=>{
+      const opt = document.createElement('option');
+      opt.value = v; dl.appendChild(opt);
+    });
+  }
+
+  function updateSummary(){
+    const total = data.length;
+    const hits = data.filter(r => {
+        const v = (r['Preferred Term']||'').trim();
+        return v !== '' && v !== '未分類';
+    }).length;
+    const miss = total - hits;
+    countEl.textContent = total;
+    idxEl.textContent = total? (idx+1) : 0;
+    lastEl.textContent = total;
+    hitsEl.textContent = hits;
+    missEl.textContent = miss;
+    hitbar.style.width = total? `${Math.round(hits*100/total)}%` : '0%';
+  }
+
+  function loadIndex(i){
+    if(!data.length) return;
+    idx = Math.max(0, Math.min(i, data.length-1));
+    const r = data[idx];
+    rowId.textContent = r['Row_ID'] ?? '';
+    issueNo.textContent = r['ISSUE NO.'] ?? '';
+    fileName.textContent = r['File Name'] ?? '';
+    original.textContent = r['Original Description'] ?? '';
+
+    pref.value = r['Preferred Term'] ?? '';
+    alt.value = r['Alternative Terms'] ?? '';
+    def.value = r['Definition'] ?? '';
+
+    snapshot = JSON.stringify(r);
+    updateSummary();
+  }
+
+  function saveCurrent(){
+    if(!data.length) return;
+    const r = data[idx];
+    const newPref = pref.value.trim();
+    const newAlt = alt.value.trim();
+    const newDef = def.value.trim();
+    r['Preferred Term'] = newPref;
+    r['Alternative Terms'] = newAlt;
+    r['Definition'] = newDef;
+    snapshot = JSON.stringify(r);
+
+    // 更新記憶與候選
+    if(newPref){
+      prefOptions.add(newPref);
+      if(!pref2alt[newPref]) pref2alt[newPref] = new Set();
+      newAlt.split(/;|,|\n/).map(s=>s.trim()).filter(Boolean).forEach(v=>pref2alt[newPref].add(v));
+      // 定義可為空白，只有填了才記
+      if(newDef) pref2def[newPref] = newDef;
+      savePrefMemory();
+      recalcOptions();
+    }
+    updateSummary();
+  }
+
+  function resetCurrent(){
+    if(!data.length || !snapshot) return;
+    data[idx] = JSON.parse(snapshot);
+    loadIndex(idx);
+  }
+
+  function exportCsv(){
+    if(!data.length) return;
+    const csv = Papa.unparse({fields: REQUIRED_FIELDS, data: data.map(r=>REQUIRED_FIELDS.map(k=>r[k]??''))});
+    const blob = new Blob([new TextEncoder().encode(csv)], {type:'text/csv;charset=utf-8;'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'D2_controlled_vocabulary_csvFile.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  }
+  function exportMapCsv(){
+    const rows = [];
+    const keys = Object.keys(pref2alt).sort((a,b)=>a.localeCompare(b));
+    keys.forEach(k=>{
+      const alts = Array.from(pref2alt[k]).join('; ');
+      const d = pref2def[k] || '';
+      rows.push({preferred:k, alternatives:alts, definition:d});
+    });
+    const csv = Papa.unparse({fields:['preferred','alternatives','definition'], data: rows.map(r=>[r.preferred,r.alternatives,r.definition])});
+    const blob = new Blob([new TextEncoder().encode(csv)], {type:'text/csv;charset=utf-8;'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'controlled_vocabulary_table.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  }
+
+  // Helpers
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
+  }
+  function splitAlts(s){ return String(s||'').split(/;|,|\n/).map(x=>x.trim()).filter(Boolean); }
+
+  // Preferred change hooks（主欄位）
+  function onPreferredChange(){
+    const key = pref.value.trim();
+    if(key){
+      if(pref2alt[key] && pref2alt[key].size){ alt.value = Array.from(pref2alt[key]).join('; '); }
+      if(pref2def[key]){ def.value = pref2def[key]; }
+    }
+  }
+  pref.addEventListener('change', onPreferredChange);
+  pref.addEventListener('blur', onPreferredChange);
+
+  // Quick section interactions
+  pickPref.addEventListener('change', ()=>{
+    const key = pickPref.value.trim();
+    // 將記憶帶到 quick 欄位
+    if(key && pref2alt[key] && pref2alt[key].size){
+      quickAlt.value = Array.from(pref2alt[key]).join('; ');
+    }else{
+      quickAlt.value = '';
+    }
+    quickDef.value = pref2def[key] || '';
+    refreshQuickFillState();
+  });
+
+  btnAddPref.addEventListener('click', ()=>{
+    const np = newPref.value.trim();
+    if(!np) return;
+    // 加入候選
+    prefOptions.add(np);
+    // 建立記憶節點：Alternative 預設=Preferred；Definition 保持空白
+    if(!pref2alt[np]) pref2alt[np] = new Set();
+    pref2alt[np].add(np);
+    pref2def[np] = ''; // 明確清空
+    // 更新 quick 欄位：Alt=Preferred，Def=空白
+    quickAlt.value = np;
+    quickDef.value = '';
+    // 保存並更新 UI
+    savePrefMemory();
+    rebuildSelect(pickPref, Array.from(prefOptions).sort());
+    rebuildDatalist(dlPref, Array.from(prefOptions).sort());
+    pickPref.value = np;
+    newPref.value = '';
+    refreshQuickFillState();
+  });
+
+  function refreshQuickFillState(){
+    const hasDef = quickDef.value.trim().length > 0;
+    btnQuickFill.disabled = !hasDef;
+    defWarn.style.display = hasDef ? 'none' : 'inline';
+  }
+  quickAlt.addEventListener('input', refreshQuickFillState);
+  quickDef.addEventListener('input', refreshQuickFillState);
+
+  btnQuickFill.addEventListener('click', ()=>{
+    const p = pickPref.value.trim() || newPref.value.trim();
+    if(!p) return;
+    const qa = quickAlt.value.trim();
+    const qd = quickDef.value.trim();
+    // 寫入主欄位
+    pref.value = p;
+    alt.value = qa;
+    def.value = qd;
+    // 更新記憶
+    if(!pref2alt[p]) pref2alt[p] = new Set();
+    splitAlts(qa).forEach(v=>pref2alt[p].add(v));
+    pref2def[p] = qd;
+    savePrefMemory();
+    // 也併入候選
+    prefOptions.add(p);
+    rebuildDatalist(dlPref, Array.from(prefOptions).sort());
+    rebuildSelect(pickPref, Array.from(prefOptions).sort());
+  });
+
+  // Navigation
+  prevBtn.addEventListener('click', ()=>{ if(idx>0){saveCurrent(); loadIndex(idx-1);} });
+  nextBtn.addEventListener('click', ()=>{ if(idx<data.length-1){saveCurrent(); loadIndex(idx+1);} });
+  jumpInp.addEventListener('keydown', (e)=>{
+    if(e.key==='Enter'){
+      const v = jumpInp.value.trim();
+      if(!v) return;
+      const asNum = Number(v);
+      if(Number.isFinite(asNum)){
+        const byId = data.findIndex(r => Number(r['Row_ID'])===asNum);
+        if(byId>=0){ saveCurrent(); loadIndex(byId); return; }
+        const i = Math.max(1, Math.min(asNum, data.length));
+        saveCurrent(); loadIndex(i-1);
+      }
+    }
+  });
+
+  // Save buttons
+  saveBtn.addEventListener('click', ()=>{ saveCurrent(); loadIndex(idx); });
+  saveNextBtn.addEventListener('click', ()=>{ saveCurrent(); if(idx<data.length-1) loadIndex(idx+1); });
+  resetBtn.addEventListener('click', resetCurrent);
+
+  // Export
+  btnExport.addEventListener('click', exportCsv);
+  btnExportMap.addEventListener('click', exportMapCsv);
+
+  // Keyboard shortcuts
+  window.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowUp'){ e.preventDefault(); prevBtn.click(); }
+    if(e.key==='ArrowDown'){ e.preventDefault(); nextBtn.click(); }
+    if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==='s'){ e.preventDefault(); saveBtn.click(); }
+  });
+
+  // File load with spinner
+  fileInput.addEventListener('change', ()=>{
+    const f = fileInput.files?.[0];
+    if(!f) return;
+    overlay.classList.add('show');
+    Papa.parse(f, {
+      header:true,
+      skipEmptyLines:true,
+      complete: (res)=>{
+        try{
+          let rows = res.data;
+          // ensure required fields present; if missing, create blanks
+          rows = rows.map(r=>{
+            const o = {}; REQUIRED_FIELDS.forEach(k=> o[k] = r[k] ?? ''); return o;
+          });
+          data = rows; fields = res.meta.fields || REQUIRED_FIELDS;
+
+          loadPrefMemory();
+          seedMemoryFromData();
+
+          recalcOptions();
+          updateSummary();
+          summaryCard.style.display = 'block';
+          navCard.style.display = 'block';
+          workCard.style.display = 'block';
+          btnExport.disabled = false;
+          btnExportMap.disabled = false;
+          loadIndex(0);
+          refreshQuickFillState();
+        } finally {
+          overlay.classList.remove('show');
+        }
+      },
+      error: ()=>{ overlay.classList.remove('show'); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
